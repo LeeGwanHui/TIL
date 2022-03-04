@@ -64,6 +64,6 @@ Planning : 기계공학에서 사용하는 problems in sequential decision makin
 
 ## reinforcement가 역사 : 3 different approaches
 - Trial-error learning : 동물 실험에서 나옴
-- Optimal control(dynamic programming) :기계, 제어 공학에서
+- Optimal control(dynamic programming) :기계, 제어 공학에서 사용
 - Temporal- difference(TD) learning
 - TD + optimal control : Q - learning
