@@ -67,3 +67,12 @@ Planning : 기계공학에서 사용하는 problems in sequential decision makin
 - Optimal control(dynamic programming) :기계, 제어 공학에서 사용
 - Temporal- difference(TD) learning
 - TD + optimal control : Q - learning
+
+## 주피터 노트북에서 가상환경 설정을 위해 가상환경해서 cuda 설치하는 방법
+conda install -c anaconda cudatoolkit
+
+conda install -c anaconda cudnn
+
+## pytorch 설치방법
+
+!nvcc --version -> 버전 확인 
