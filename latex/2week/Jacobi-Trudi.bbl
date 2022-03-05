@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{AmanovYeliussizov}
+A.~Amanov and D.~Yeliussizov.
+\newblock Determinantal formulas for dual {G}rothendieck polynomials.
+\newblock \url{https://arxiv.org/abs/2003.03907}.
+
+\bibitem{Buch2002}
+A.~S. Buch.
+\newblock A {L}ittlewood-{R}ichardson rule for the {$K$}-theory of
+  {G}rassmannians.
+\newblock {\em Acta Math.}, 189(1):37--78, 2002.
+
+\bibitem{FK1996}
+S.~Fomin and A.~N. Kirillov.
+\newblock The {Y}ang-{B}axter equation, symmetric functions, and {S}chubert
+  polynomials.
+\newblock In {\em Proceedings of the 5th {C}onference on {F}ormal {P}ower
+  {S}eries and {A}lgebraic {C}ombinatorics ({F}lorence, 1993)}, volume 153,
+  pages 123--143, 1996.
+
+\bibitem{Fulton1997}
+W.~Fulton.
+\newblock {\em Young tableaux}, volume~35 of {\em London Mathematical Society
+  Student Texts}.
+\newblock Cambridge University Press, Cambridge, 1997.
+\newblock With applications to representation theory and geometry.
+
+\bibitem{Galashin2017}
+P.~Galashin.
+\newblock A {L}ittlewood-{R}ichardson rule for dual stable {G}rothendieck
+  polynomials.
+\newblock {\em J. Combin. Theory Ser. A}, 151:23--35, 2017.
+
+\bibitem{GGL2016}
+P.~Galashin, D.~Grinberg, and G.~Liu.
+\newblock Refined dual stable {G}rothendieck polynomials and generalized
+  {B}ender-{K}nuth involutions.
+\newblock {\em Electron. J. Combin.}, 23(3):Paper 3.14, 28, 2016.
+
+\bibitem{LGV}
+I.~M. Gessel and X.~G. Viennot.
+\newblock Determinants, paths, and plane partitions.
+\newblock {\it preprint}, 1989.
+
+\bibitem{Grinberg_conj}
+D.~Grinberg.
+\newblock Refined dual stable {G}rothendieck polynomials.
+\newblock \url{http://www.cip.ifi.lmu.de/~grinberg/algebra/chicago2015.pdf}.
+
+\bibitem{LP2007}
+T.~Lam and P.~Pylyavskyy.
+\newblock Combinatorial {H}opf algebras and {$K$}-homology of {G}rassmannians.
+\newblock {\em Int. Math. Res. Not. IMRN}, (24):Art. ID rnm125, 48, 2007.
+
+\bibitem{LS1982}
+A.~Lascoux and M.-P. Sch\"{u}tzenberger.
+\newblock Structure de {H}opf de l'anneau de cohomologie et de l'anneau de
+  {G}rothendieck d'une vari\'{e}t\'{e} de drapeaux.
+\newblock {\em C. R. Acad. Sci. Paris S\'{e}r. I Math.}, 295(11):629--633,
+  1982.
+
+\bibitem{Lenart2000}
+C.~Lenart.
+\newblock Combinatorial aspects of the {$K$}-theory of {G}rassmannians.
+\newblock {\em Ann. Comb.}, 4(1):67--82, 2000.
+
+\bibitem{Lindstrom}
+B.~Lindstr\"om.
+\newblock On the vector representations of induced matroids.
+\newblock {\em Bull. London Math. Soc.}, 5:85--90, 1973.
+
+\bibitem{ShimozonoZabrocki}
+M.~Shimozono and M.~Zabrocki.
+\newblock Stable {G}rothendieck symmetric functions and {$\Omega$}-calculus.
+\newblock {\it Preprint}.
+
+\bibitem{EC2}
+R.~P. Stanley.
+\newblock {\em Enumerative Combinatorics. {V}ol. 2}, volume~62 of {\em
+  Cambridge Studies in Advanced Mathematics}.
+\newblock Cambridge University Press, Cambridge, 1999.
+\newblock With a foreword by Gian-Carlo Rota and appendix 1 by Sergey Fomin.
+
+\bibitem{Yeliussizov2017}
+D.~Yeliussizov.
+\newblock Duality and deformations of stable {G}rothendieck polynomials.
+\newblock {\em J. Algebraic Combin.}, 45(1):295--344, 2017.
+
+\end{thebibliography}
