@@ -23,7 +23,8 @@ q<sub>&pi;</sub>(s,a) = E<sub>&pi;</sub>[G<sub>t</sub> | S<sub>t</sub> = s, A<su
 - 단 바둑이나 장기 같은 다차원의 state의 경우는 계산이 불가능하다.
 
 ## optimal value Function
-- 특정 state에서 취할 수 있는 모든 policy중에 최대화 되는 것을 optimal이라고 함.
+- 모든 state s에 대해서 취할 수 있는 모든 가능한 policy중에 최대화 되는 것을 optimal value Function이라고 함.
+- 모든 state s와 action a에 대해서 취할 수 있는 모든 가능한 policy 중에서 최대화 되는 것을 optimal action value function이라고 함.
 ![title](./img/14_optimal.PNG)
 - optimal value function을 찾는다는 것은 optimal policy를 찾는 것이고 이는 강화학습 문제를 푸는 것이다.
 ![title](./img/15_optimal.PNG)
