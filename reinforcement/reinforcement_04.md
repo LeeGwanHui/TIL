@@ -15,10 +15,11 @@ q<sub>&pi;</sub>(s,a) = E<sub>&pi;</sub>[G<sub>t</sub> | S<sub>t</sub> = s, A<su
 ![title](./img/10_Bellman.PNG)
 - 마지막 줄이 Bellman Equation이다.
 - value function의 본래 정의에 대해서는 전체 미래를 다 알아야 하는데 bellman equation을 사용하면 다음 state만 알면 된다.
-- 반면 q를 v로 표현하는 방법은 아래와 같다.
+- 반면 q를 v로 표현하는 방법은 아래와 같다.  
 ![title](./img/11_action.PNG)
 ![title](./img/12_action.PNG)
--model을 정확히 안다고 가정하면 아래처럼 구할 수 있다. : model을 안다는 의미는 P(transition probability)와 R(reward)을 정확히 아는 것이다.
+- 
+model을 정확히 안다고 가정하면 아래처럼 구할 수 있다. : model을 안다는 의미는 P(transition probability)와 R(reward)을 정확히 아는 것이다.
 ![title](./img/13_vector.PNG)
 - 단 바둑이나 장기 같은 다차원의 state의 경우는 계산이 불가능하다.
 
