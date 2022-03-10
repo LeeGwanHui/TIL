@@ -3,7 +3,12 @@
 
 # reinforcement
 1강 introduction to Reinforcement Learning  
-2강 introduction to RL, Markov Decision Process
+2강 introduction to RL, Markov Decision Process  
+3강 Markov Decision Process(2)  
+4강 Markov Decision Process(3)  
+5강 Markov Decision Process(4), Dynamic Programming  
+6강 Dynamic Programming(2)  
+7강 Dynamic Programming(3)  
 
 # latex
 latex 사용법
