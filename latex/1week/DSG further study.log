@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.4)  5 MAR 2022 12:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.11)  11 MAR 2022 16:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -455,33 +455,33 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (./DSG further study.aux)
 \openout1 = `"DSG further study.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 161.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 162.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 161.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 162.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package hyperref Info: Link coloring OFF on input line 161.
+Package hyperref Info: Link coloring OFF on input line 162.
  (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -491,9 +491,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count307
 )
-LaTeX Info: Redefining \ref on input line 161.
-LaTeX Info: Redefining \pageref on input line 161.
-LaTeX Info: Redefining \nameref on input line 161.
+LaTeX Info: Redefining \ref on input line 162.
+LaTeX Info: Redefining \pageref on input line 162.
+LaTeX Info: Redefining \nameref on input line 162.
  (./DSG further study.out) (./DSG further study.out)
 \@outlinefile=\write4
 \openout4 = `"DSG further study.out"'.
@@ -517,22 +517,22 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
-Overfull \hbox (3.47299pt too wide) in paragraph at lines 535--539
+Overfull \hbox (3.47299pt too wide) in paragraph at lines 542--546
 []\OT1/cmr/m/n/12 The \OT1/cmr/m/it/12 row-flagged re-fined dual sta-ble Grothendieck poly-no-mial $[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$ and the \OT1/cmr/m/it/12 column-
  []
 
 [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30]
-Overfull \hbox (14.0977pt too wide) in paragraph at lines 2616--2617
+Overfull \hbox (14.0977pt too wide) in paragraph at lines 2623--2624
 []\OT1/cmr/m/n/12 The au-thor was sup-ported by NRF grants #2019R1F1A1059081 and #2016R1A5A1008055. 
  []
 
 [31]
-Underfull \hbox (badness 3240) in paragraph at lines 2642--2645
+Underfull \hbox (badness 3240) in paragraph at lines 2649--2652
 []\OT1/cmr/m/n/10 D. Grin-berg. Re-fined dual sta-ble Grothendieck poly-no-mi-als. []$\OT1/cmtt/m/n/10 http : / / www . cip . ifi . lmu . de /
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 2653--2658
+Underfull \hbox (badness 1448) in paragraph at lines 2660--2665
 []\OT1/cmr/m/n/10 S. Iwao. Free-fermions and ad-joint ac-tions on sta-ble $\OML/cmm/m/it/10 ^^L$\OT1/cmr/m/n/10 -Grothendieck poly-no-mi-als. \OT1/cmr/m/it/10 Preprint\OT1/cmr/m/n/10 ,
  []
 
@@ -542,14 +542,14 @@ Package rerunfilecheck Info: File `"DSG further study".out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  21282 strings out of 478276
- 398121 string characters out of 5850490
- 677387 words of memory out of 5000000
+ 398121 string characters out of 5850489
+ 677388 words of memory out of 5000000
  38805 multiletter control sequences out of 15000+600000
  477672 words of font info for 61 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  84i,19n,80p,472b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "DSG further study.pdf" (32 pages, 431884 bytes).
+Output written on "DSG further study.pdf" (32 pages, 433542 bytes).
 PDF statistics:
  756 PDF objects out of 1000 (max. 8388607)
  671 compressed objects within 7 object streams

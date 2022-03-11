@@ -111,6 +111,7 @@
     \draw[gray,very thin] (\i,0) -- (\i,\Y+\W+4);
     % \node [below] at (\i,0) {\i};
   }
+
   \pgfmathsetmacro{\y}{\W+1}
   \pgfmathsetmacro{\z}{\W}
   \pgfmathsetmacro{\m}{\Y}
@@ -151,7 +152,7 @@ polynomials]{Jacobi--Trudi formulas for flagged refined dual stable Grothendieck
   polynomials}
 
 \author{Jang Soo Kim}
-\thanks{} 
+\thanks{}
 \address{Department of Mathematics,
 Sungkyunkwan University (SKKU), Suwon, Gyeonggi-do 16419, South Korea}
 \email{jangsookim@skku.edu}
@@ -174,6 +175,12 @@ Sungkyunkwan University (SKKU), Suwon, Gyeonggi-do 16419, South Korea}
   polynomials are proved using plethystic substitution. This resolves a
   conjecture of Grinberg and generalizes a result by Iwao and
   Amanov--Yeliussizov.
+  
+  \begin{align*}
+    dsfsdfsd &= 1asdfjkl;asd\\
+    &= asdfsdkf
+  \end{align*}
+  
 \end{abstract}
 
 \maketitle
@@ -304,7 +311,7 @@ theorem.
 
 \begin{thm} \label{thm:main} Let $\alpha=(\alpha_1,\dots,\alpha_n)$ and
   $\beta=(\beta_1,\dots,\beta_n)$ be sequences of nonnegative
-  integers and let $\lambda$ and $\mu$ be partitions with at most $n$ parts. 
+  integers and let $\lambda$ and $\mu$ be partitions with at most $n$ parts.
 
   If $\alpha_i\le \alpha_{i+1}+1$ and $\beta_i\le \beta_{i+1}+1$ whenever
   $\mu_i<\lambda_{i+1}$, then
@@ -520,7 +527,7 @@ For $\lambda,\mu\in\NN^n$, the \emph{refined dual stable Grothendieck
 \]
 The polynomials $\wg_\lm(x;t)$ were introduced by Galashin, Grinberg, and Liu
 \cite{GGL2016}. They showed that $\wg_\lm(x;t)$ is symmetric in the variables
-$x$ but not in the variables $t$. 
+$x$ but not in the variables $t$.
 
 
 
@@ -573,7 +580,7 @@ following well known properties of the plethystic substitution.
 
 \begin{prop}\label{prop:plethysm}
   Let $A,B\in \mathbb{Q}[[a_1,a_2,\dots]]$ and $f\in \Lambda$.
-  Then 
+  Then
 \begin{align*}
   f[A+B] &=  \sum_{(f)}f_{(1)}[A] f_{(2)}[B],\\
   f[-A] &= (S(f))[A],
@@ -617,7 +624,7 @@ is equivalent to one of the main results.
 
 
 \begin{thm}\label{thm:col_flag}
-  Let $\alpha,\beta\in\NN^n$ and $\mu,\lambda\in\Par_n$. 
+  Let $\alpha,\beta\in\NN^n$ and $\mu,\lambda\in\Par_n$.
 If $\alpha_i\le \alpha_{i+1}+1$ and $\beta_i\le \beta_{i+1}+1$ whenever
 $\mu_i<\lambda_{i+1}$, then
 \[
@@ -634,7 +641,7 @@ equivalent to this theorem, see Proposition~\ref{prop:equivalence}.
 
 
 \begin{thm} \label{thm:col_flag2}
-  Let $\alpha,\beta\in\NN^n$ and $\mu,\lambda\in\Par_n$. 
+  Let $\alpha,\beta\in\NN^n$ and $\mu,\lambda\in\Par_n$.
 If $\alpha_i\le \alpha_{i+1}+1$ and $\beta_i\le \beta_{i+1}+1$ whenever
 $\mu_i<\lambda_{i+1}$, then
   \[
@@ -644,7 +651,7 @@ $\mu_i<\lambda_{i+1}$, then
 \]
 \end{thm}
 
-Note that the $(i,j)$ entry of the matrix in Theorem~\ref{thm:col_flag} 
+Note that the $(i,j)$ entry of the matrix in Theorem~\ref{thm:col_flag}
 can be written as
 \[
 e_{\lambda_i-\mu_j-i+j}(x_{\alpha_j+1},\dots, x_{\beta_i},t_{\mu_j+1},\dots,t_{\lambda_i-1})
@@ -652,7 +659,7 @@ e_{\lambda_i-\mu_j-i+j}(x_{\alpha_j+1},\dots, x_{\beta_i},t_{\mu_j+1},\dots,t_{\
 \]
 If we replace $T_{(\mu_j,\lambda_i-1]}$ by $T_{\lambda_i-1}-T_{\mu_j}$, we
 obtain Theorem~\ref{thm:col_flag2}. However, unlike the $t$ variables, we cannot
-replace $X_{(\alpha_j,\beta_i]}$ by $X_{\beta_i}-X_{\alpha_j}$. 
+replace $X_{(\alpha_j,\beta_i]}$ by $X_{\beta_i}-X_{\alpha_j}$.
 
 
 The following theorem is the second main result, which is a dual version of
@@ -661,7 +668,7 @@ Theorem~\ref{thm:col_flag2}.
 
 
 \begin{thm}\label{thm:row_flag}
-  Let $\alpha,\beta\in\NN^n$ and $\mu,\lambda\in\Par_n$. 
+  Let $\alpha,\beta\in\NN^n$ and $\mu,\lambda\in\Par_n$.
 If $\alpha_i\le \alpha_{i+1}$ and $\beta_i\le \beta_{i+1}$ whenever
 $\mu_i<\lambda_{i+1}$, then
 \[
@@ -771,13 +778,13 @@ is no such map for the general $t$. To see this suppose that there were an
 algebra homomorphism $\psi:\Lambda\to\Lambda$ satisfying $\psi(\wg_{\lm}(x;t)) =
 \wg_{\lambda'/\mu'}(x;t)$. Then it must satisfy
   \[
-\psi(h_k(x))=\psi(\wg_{(k)}(x;t)) = \wg_{(1^k)}(x;t) = e_k[X+T_{k-1}]. 
+\psi(h_k(x))=\psi(\wg_{(k)}(x;t)) = \wg_{(1^k)}(x;t) = e_k[X+T_{k-1}].
   \]
   Since $h_k(x)=\wg_{(k)}(x;t)=\wg_{(k+1)/(1)}(x;t)$, we must also have
   \[
-\psi(h_k(x))=\psi(\wg_{(k+1)/(1)}(x;t)) = \wg_{(1^{k+1})/(1)}(x;t) = e_k[X+T_{k}-T_1]. 
+\psi(h_k(x))=\psi(\wg_{(k+1)/(1)}(x;t)) = \wg_{(1^{k+1})/(1)}(x;t) = e_k[X+T_{k}-T_1].
   \]
-Since $e_k[X+T_{k-1}]\ne e_k[X+T_{k}-T_1]$, the map $\psi$ cannot exist.  
+Since $e_k[X+T_{k-1}]\ne e_k[X+T_{k}-T_1]$, the map $\psi$ cannot exist.
 
 
 
@@ -816,7 +823,7 @@ $\prec$ on the cells in $\lm$ as follows: $(i,j) \prec (i',j')$ if and only if
 $j>j'$ or $j=j'$ and $i<i'$. Note that by definition $(i,j) \prec (i',j')$
 implies $(i,j)\ne (i',j')$. Denote by $(\lm)^{(m)}$ the set of the first $m$
 cells in $\lm$ in the total order $\prec$. Note that $(\lm)^{(m)}$ is not
-necessarily a skew shape, see Figure~\ref{fig:rpp2}. 
+necessarily a skew shape, see Figure~\ref{fig:rpp2}.
 
 
 \begin{defn}\label{defn:R0}
@@ -824,7 +831,7 @@ necessarily a skew shape, see Figure~\ref{fig:rpp2}.
   $\mu\subseteq\lambda$. Let $\rho=(\lm)^{(m)}$ for some $0\le m\le|\lm|$ and
   let $R_0\in \RPP^{\row(\alpha,\beta)}_{\rho}$. Then we define
 \begin{align*}
-  \RPP^{\row(\alpha,\beta)}_{\lm}(R_0) 
+  \RPP^{\row(\alpha,\beta)}_{\lm}(R_0)
   &=\{R\in \RPP^{\row(\alpha,\beta)}_{\lm}: R|_\rho = R_0\},\\
  C(\rho)&=\{1\le i\le n: \rho_i>0\},\\
 B(R_0,\beta)&=(\wb_1,\dots,\wb_n),
@@ -890,7 +897,7 @@ entries in row $i$ are irrelevant.
 
 
 
-For $R\in\RPP_{\lm}$, we define 
+For $R\in\RPP_{\lm}$, we define
 \[
 \wt(R)=\prod_{i\ge1}x_i^{a_i(R)} t_i^{b_i(R)},
 \]
@@ -915,14 +922,14 @@ $\owt(R)=\wt(R')$.
   $\mu\subseteq\lambda$, and a fixed RPP $R_0$ of shape $\rho=(\lm)^{(m)}$,
   define
 \begin{align*}
-  \R^{\alpha,\beta}_{\lambda,\mu}(R_0) 
+  \R^{\alpha,\beta}_{\lambda,\mu}(R_0)
     &=\sum_{R\in \RPP^{\row(\alpha,\beta)}_{\lm}(R_0)} \wt(R),\\
-  \oR^{\alpha,\beta}_{\lambda,\mu}(R_0) 
+  \oR^{\alpha,\beta}_{\lambda,\mu}(R_0)
     &=\sum_{R\in \RPP^{\row(\alpha,\beta)}_{\lm}(R_0)} \owt(R).
 \end{align*}
 \end{defn}
 
-Note that, by definition, 
+Note that, by definition,
 \begin{align*}
   \wg_{\lambda/\mu}^{\row(\alpha,\beta)}(x;t) &= \R^{\alpha,\beta}_{\lambda,\mu}(\emptyset),\\
   \wg_{\lambda/\mu}^{\col(\alpha,\beta)}(x;t) &=\oR^{\alpha,\beta}_{\lambda',\mu'}(\emptyset),
@@ -961,7 +968,7 @@ If $\mu\subseteq\lambda$, $\rho=(\lm)^{(m)}$, and
 $R_0\in\RPP^{\row(\alpha,\beta)}_\rho$, we define
 \begin{equation}
   \label{eq:defEE}
-  \EE_{\lambda,\mu}^{\alpha,\beta}(R_0) = \owt(R_0) 
+  \EE_{\lambda,\mu}^{\alpha,\beta}(R_0) = \owt(R_0)
   E_{\lambda-\rho,\mu}^{\alpha,B(R_0,\beta)}(C(\rho)).
 \end{equation}
 \end{defn}
@@ -970,7 +977,7 @@ Note that
 E_{\lambda,\mu}^{\alpha,\beta}=E_{\lambda,\mu}^{\alpha,\beta}(\emptyset)
 =\EE_{\lambda,\mu}^{\alpha,\beta}(\emptyset),
 \]
-where the second $\emptyset$ stands for the unique filling of 
+where the second $\emptyset$ stands for the unique filling of
 the empty diagram $(\lm)^{(0)}$.
 
 Using the notation above Theorem~\ref{thm:col_flag2} can be stated as
@@ -1019,7 +1026,7 @@ Theorem~\ref{thm:col_flag2}.
 From now on, once $n$ is given, let $\epsilon_k=(0,\dots,0,1,0,\dots,0)$ be the
 sequence of $n-1$ zeros and one $1$, where the unique $1$ is at position $k$.
 For a statement $p$, we define $\chi(p)=1$ if $p$ is true and $\chi(p)=0$
-otherwise. 
+otherwise.
 
 Let $\QPar_n$ denote the set of $\alpha\in\NN^n$ such that $\alpha_i\le
 \alpha_{i+1}+1$ for all $i\in[n-1]$. Note that if $\alpha\in\QPar_n$ and $1\le
@@ -1061,7 +1068,7 @@ e_m[Z-z] = \sum_{i=0}^m e_{m-i}[Z](-1)^ih_i(z)=\sum_{i=0}^m e_{m-i}[Z](-z)^i.
 \end{proof}
 
 \begin{lem}\label{lem:e_k=0}
-If $i\ge j\ge0$ and $k>i-j$, then 
+If $i\ge j\ge0$ and $k>i-j$, then
 \[
 e_k[T_i-T_j] = 0.
 \]
@@ -1076,7 +1083,7 @@ e_k[T_i-T_j] = 0.
   Let $\alpha,\beta\in\NN^n$, $\mu\in\Par_n$, and $C\subseteq[n]$. Then
 \[
   E^{\alpha,\beta}_{\mu,\mu}(C) = 1.
-\] 
+\]
 \end{lem}
 \begin{proof}
   If $i\ge j$, we have $\mu_i-i-\mu_j+j\le 0$, where the equality holds if and
@@ -1094,7 +1101,7 @@ e_k[T_i-T_j] = 0.
   $\mu\not\subseteq\lambda$. Then for any subset $C\subseteq[n]$,
 \[
   E^{\alpha,\beta}_{\lambda,\mu}(C) = 0.
-\] 
+\]
 \end{lem}
 \begin{proof}
   Since $\mu\not\subseteq\lambda$, there is an integer $1\le k\le n$ such that
@@ -1110,7 +1117,7 @@ e_k[T_i-T_j] = 0.
   $\alpha_k\ge \beta_k$ and $\mu_k<\lambda_k$ for some $1\le k\le n$. Then
 \[
   E^{\alpha,\beta}_{\lambda,\mu} = 0.
-\] 
+\]
 \end{lem}
 \begin{proof}
   By Lemma~\ref{lem:det=0} it is enough to show that
@@ -1168,7 +1175,7 @@ We consider the two cases $k\notin C$ and $k\in C$.
   =e_{\lambda,\mu}^{\alpha,\beta-\epsilon_k}(k,j)
   +x_{\beta_k} \ove_{\lambda-\epsilon_k,\mu}^{\alpha,\beta}(k,j).
 \end{equation}
-By definition we can rewrite \eqref{eq:e=e+xe} as 
+By definition we can rewrite \eqref{eq:e=e+xe} as
 \begin{multline}\label{eq:7.4}
 \quad  e_{\lambda_k-k-\mu_j+j}[X_{(\alpha_j,\beta_k]}+T_{\lambda_k-1}-T_{\mu_j}]
   = e_{\lambda_k-k-\mu_j+j}[X_{(\alpha_j,\beta_k-1]}+T_{\lambda_k-1}-T_{\mu_j}]\\
@@ -1183,7 +1190,7 @@ $X_{(\alpha_j, \beta_k-1]} = 0$. Therefore in order to prove the
 claim~\eqref{eq:7.4}, it suffices to show
 \begin{equation}
   \label{eq:10}
- e_{\lambda_k-k-\mu_j+j-1}[T_{\lambda_k-1}-T_{\mu_j}] = 0, 
+ e_{\lambda_k-k-\mu_j+j-1}[T_{\lambda_k-1}-T_{\mu_j}] = 0,
 \end{equation}
 because then both sides of \eqref{eq:7.4} are equal to
 $e_{\lambda_k-k-\mu_j+j}[T_{\lambda_k-1}-T_{\mu_j}]$. We will prove
@@ -1215,7 +1222,7 @@ we obtain the identity in the lemma in this case.
   \begin{multline*}
     e_{\lambda_k-k-\mu_j+j}[X_{(\alpha_j,\beta_k-1]}+T_{\lambda_k}-T_{\mu_j}]
     = e_{\lambda_k-k-\mu_j+j}[X_{(\alpha_j,\beta_k-1]}+T_{\lambda_k-1}-T_{\mu_j}]
-    \\ + t_{\lambda_k} 
+    \\ + t_{\lambda_k}
     e_{\lambda_k-k-\mu_j+j-1}[X_{(\alpha_j,\beta_k-1]}+T_{\lambda_k-1}-T_{\mu_j}],
   \end{multline*}
   which is exactly \eqref{eq:e=e+te}. Using \eqref{eq:e=e+te} and the linearity
@@ -1234,17 +1241,17 @@ We
 \[
   E_{\lambda, \mu}^{\alpha, \beta}(C) =
 \det\left(e^{\alpha,\beta}_{\lambda,\mu} (C;i,j)\right)_{1\le i,j\le n}.
-\] 
-Since $r\notin C$, the $(r,j)$ entry of the matrix is 
+\]
+Since $r\notin C$, the $(r,j)$ entry of the matrix is
 \[
   e^{\alpha,\beta}_{\lambda,\mu}(C;r,j)
-  =e^{\alpha,\beta}_{\lambda,\mu}(r,j) 
+  =e^{\alpha,\beta}_{\lambda,\mu}(r,j)
     =e_{\lambda_r-r-\mu_j+j}[X_{(\alpha_j,\beta_r]}+T_{\lambda_r-1}-T_{\mu_j}].
 \]
-Since $r-1\in C$, the $(r-1,j)$ entry of the matrix is 
+Since $r-1\in C$, the $(r-1,j)$ entry of the matrix is
 \[
   e^{\alpha,\beta}_{\lambda,\mu}(C;r-1,j)
-  =\ove^{\alpha,\beta}_{\lambda,\mu}(r-1,j) 
+  =\ove^{\alpha,\beta}_{\lambda,\mu}(r-1,j)
     =e_{\lambda_{r-1}-(r-1)-\mu_j+j}[X_{(\alpha_j,\beta_{r-1}-1]}+T_{\lambda_{r-1}}-T_{\mu_j}].
 \]
 Since $\lambda_r = \lambda_{r-1}+1$ and $\beta_r = \beta_{r-1}-1$, the right
@@ -1259,7 +1266,7 @@ the matrix are identical, which implies $E_{\lambda, \mu}^{\alpha, \beta}(C) =
 
 
 We first show that $\oR^{\alpha,\beta}_{\lambda,\mu}(R_0)$ and
-$\EE^{\alpha,\beta}_{\lambda,\mu}(R_0)$ satisfy the same recurrence relation 
+$\EE^{\alpha,\beta}_{\lambda,\mu}(R_0)$ satisfy the same recurrence relation
 under certain conditions.
 
 \begin{prop}\label{prop:rec RPP R0}
@@ -1270,14 +1277,14 @@ under certain conditions.
   $\wb=(\wb_1,\dots,\wb_n)=B(R_0,\beta)$. Then
   \begin{align}
     \label{eq:rec M}
-    \oR^{\alpha,\beta}_{\lambda,\mu}(R_0) 
+    \oR^{\alpha,\beta}_{\lambda,\mu}(R_0)
     &= \sum_{k=a}^{\wb_r} \oR^{\alpha,\beta}_{\lambda,\mu}(R_0\cup\{k\}),\\
     \label{eq:rec E}
     \EE^{\alpha,\beta}_{\lambda,\mu}(R_0)
     &= \sum_{k=a}^{\wb_r} \EE^{\alpha,\beta}_{\lambda,\mu}(R_0\cup\{k\}),
   \end{align}
   where $R_0\cup\{k\}$ is the RPP obtained from $R_0$ by adding the cell $(r,c)$
-  with entry $k$, and 
+  with entry $k$, and
   \[
 a = \begin{cases}
   \wb_{r-1}, &\mbox{if $(r-1,c)\in\rho$ and $\wb_{r-1}\ge\alpha_r+1$},\\
@@ -1301,7 +1308,7 @@ a = \begin{cases}
 s = \begin{cases}
   \wb_r-\wb_{r-1}+1, & \mbox{if $(r-1,c)\in\rho$
   and $\wb_{r-1}\ge\alpha_r+1$} ,\\
-\wb_r-\alpha_r, &\mbox{otherwise} . 
+\wb_r-\alpha_r, &\mbox{otherwise} .
 \end{cases}
   \end{equation}
   Lemma~\ref{lem:s-1} below (specifically, \eqref{eq:s>0})
@@ -1344,7 +1351,7 @@ $\mu_j<(\lambda-\rho)_r$, then $\alpha_j<\wb_r-(s-1) \le \wb_r$
 (since $s \ge 1$). Therefore by
 Lemma~\ref{lem:rec e} we have
 \begin{equation}\label{eq:e=ye+e}
-   E^{\alpha,\wb}_{\lambda-\rho,\mu}(C) 
+   E^{\alpha,\wb}_{\lambda-\rho,\mu}(C)
    = y E^{\alpha,\wb}_{\lambda-\rho-\epsilon_r,\mu}(C\cup\{r\})
        +E_{\lambda-\rho,\mu}^{\alpha,\wb-\epsilon_r}(C\setminus\{r\}).
 \end{equation}
@@ -1373,8 +1380,8 @@ for $i=1,2,\dots,s-1$, to get
   \end{align*}
   Since $s\ge1$, combining \eqref{eq:e=ye+e} and the above equations yields
 \begin{align}\label{eq:E=yE}
-E^{\alpha,\wb}_{\lambda-\rho,\mu}(C) 
-   &= y E^{\alpha,\wb}_{\lambda-\rho-\epsilon_r,\mu}(C\cup\{r\}) 
+E^{\alpha,\wb}_{\lambda-\rho,\mu}(C)
+   &= y E^{\alpha,\wb}_{\lambda-\rho-\epsilon_r,\mu}(C\cup\{r\})
   +E_{\lambda-\rho,\mu}^{\alpha,\wb-s\epsilon_r}(C\setminus\{r\}) \\
   \notag &\qquad + \sum_{i=1}^{s-1}
        x_{\wb_r-i} E_{\lambda-\rho-\epsilon_r,\mu}^{\alpha,\wb-i\epsilon_r}(C\cup\{r\}).
@@ -1388,7 +1395,7 @@ E_{\lambda-\rho,\mu}^{\alpha,\wb-s\epsilon_r}(C\setminus\{r\}) = 0,
 In view of $C=C(\rho)$ and $\wb=B(R_0,\beta)$,
 we can rewrite \eqref{eq:defEE} as
   \[
-  \EE_{\lambda,\mu}^{\alpha,\beta}(R_0) = \owt(R_0) 
+  \EE_{\lambda,\mu}^{\alpha,\beta}(R_0) = \owt(R_0)
   E_{\lambda-\rho,\mu}^{\alpha,\wb}(C).
 \]
 Thus, multiplying both sides of \eqref{eq:E=yE} by
@@ -1417,7 +1424,7 @@ The following lemma proves two statements used in the proof of
 Proposition~\ref{prop:rec RPP R0}.
 
 \begin{lem}\label{lem:s-1}
-  Following the notation in Proposition~\ref{prop:rec RPP R0} 
+  Following the notation in Proposition~\ref{prop:rec RPP R0}
   and letting
         \[
 s = \begin{cases}
@@ -1514,7 +1521,7 @@ Now we prove the fifth statement \eqref{eq:8}. By definition of $s$ we have
 \end{equation}
 which implies $\wb_r-(s-1)\ge\alpha_r+1$. This shows the fifth statement
 \eqref{eq:8}.
-  
+
   For the last statement \eqref{eq:11} suppose that $j<r$ and
   $\mu_j<(\lambda-\rho)_r$. We have $\mu_j<(\lambda-\rho)_r=c$ by
   the definition of $\rho$, thus $(j,c)\notin\mu$. In view of
@@ -1537,12 +1544,12 @@ Proposition~\ref{prop:rec RPP R0}.
   \begin{equation}\label{eq:e0}
 E_{\lambda-\rho,\mu}^{\alpha,\wb-s\epsilon_r}(C\setminus\{r\}) = 0,
   \end{equation}
-  where $C=C(\rho)$ and 
+  where $C=C(\rho)$ and
       \[
 s = \begin{cases}
   \wb_r-\wb_{r-1}+1, & \mbox{if $(r-1,c)\in\rho$
   and $\wb_{r-1}\ge\alpha_r+1$} ,\\
-\wb_r-\alpha_r, &\mbox{otherwise} . 
+\wb_r-\alpha_r, &\mbox{otherwise} .
 \end{cases}
   \]
 \end{lem}
@@ -1587,7 +1594,7 @@ s = \begin{cases}
 \none &  &  & & *(lightgray) & *(lightgray) & *(lightgray)  & *(lightgray) & *(lightgray) \\
 \none[r] &  &  & & \star & *(lightgray) & *(lightgray)  & *(lightgray) & *(lightgray) \\
 \none &  &  & &  & *(lightgray) & *(lightgray)    \\
-\none &  &  & 
+\none &  &  &
 \end{ytableau}
 \caption{An example of $\lm$ and $\rho$, where the cells in $\rho$ are the gray
   cells. The $(r,c)$ cell is marked with a star and the row indices $d$ and $r$,
@@ -1597,7 +1604,7 @@ s = \begin{cases}
 
 
 
- We claim that 
+ We claim that
 \begin{equation}\label{eq:E=dd}
   E_{\sigma,\mu}^{\alpha,\kappa}(C\setminus\{r\})
   =  \det(e_{\sigma,\mu}^{\alpha,\kappa}(C\setminus\{r\};i,j))_{1\le i,j\le d-1}
@@ -1617,7 +1624,7 @@ and $1\le j\le d-1$, we have
 (since $(j, c) \in \mu$)
  and therefore
 \begin{equation}\label{eq:su}
- \sigma_i-i-\mu_j+j < \sigma_i-\mu_j \le 0. 
+ \sigma_i-i-\mu_j+j < \sigma_i-\mu_j \le 0.
 \end{equation}
 Then \eqref{eq:12} follows from \eqref{eq:su} and the claim \eqref{eq:E=dd} is proved.
 
@@ -1625,7 +1632,7 @@ Then \eqref{eq:12} follows from \eqref{eq:su} and the claim \eqref{eq:E=dd} is p
 By \eqref{eq:E=dd}, to show \eqref{eq:e0} it suffices to show that
 \begin{equation}
   \label{eq:15}
-\det(e_{\sigma,\mu}^{\alpha,\kappa}(C\setminus\{r\};i,j))_{d\le i,j\le n} = 0.  
+\det(e_{\sigma,\mu}^{\alpha,\kappa}(C\setminus\{r\};i,j))_{d\le i,j\le n} = 0.
 \end{equation}
 By Lemma~\ref{lem:det=0}, to show \eqref{eq:15} it is enough to show
 \eqref{eq:12} for all $d\le i\le r$ and $r\le j\le n$.
@@ -1652,7 +1659,7 @@ Suppose $i=r$ and $r\le j\le n$. Then the above equation becomes
 \sigma_r=(\lambda-\rho)_r>\mu_r\ge\mu_j,
 \]
 the sum
-$X_{(\alpha_j,\kappa_r]} + T_{\sigma_r-1}-T_{\mu_j}$ is a sum of 
+$X_{(\alpha_j,\kappa_r]} + T_{\sigma_r-1}-T_{\mu_j}$ is a sum of
 $\max\{0,\kappa_r-\alpha_j\} +\sigma_r-1-\mu_j$ variables. Since
 \[
 \kappa_r = (\wb-s\epsilon_r)_r = \wb_r-s = \alpha_r \le \alpha_j + j-r
@@ -1697,7 +1704,7 @@ C\setminus\{r\}$, and consequently
   \end{equation}
   On the other hand, since $d\le i\le r-1$ and $j\ge r$, we have
 \begin{align*}
-\sigma_i &= (\lambda-\rho)_i = c-1 
+\sigma_i &= (\lambda-\rho)_i = c-1
 \qquad \left(\text{since $(i, c) \in \rho$ and $(i, c-1) \notin \rho$}\right) \\
 &\ge \mu_r
 \qquad \left(\text{since $(r, c) \in \lm$}\right) \\
@@ -1728,17 +1735,17 @@ be used to conclude that they are equal.
   $\mu<\lambda$. Let $\rho=(\lm)^{(m)}$ for some $0\le m\le|\lm|$ and let
   $R_0\in \RPP^{\row(\alpha,\beta)}_{\rho}$. Then
 \[
-\EE^{\alpha,\beta}_{\lambda,\mu}(R_0) = \oR^{\alpha,\beta}_{\lambda,\mu}(R_0). 
+\EE^{\alpha,\beta}_{\lambda,\mu}(R_0) = \oR^{\alpha,\beta}_{\lambda,\mu}(R_0).
 \]
 \end{prop}
 \begin{proof}
   We use induction on $N = |\lm|-|\rho|$. For the base case, suppose $N=0$ so
   that $\rho=\lm$. Then clearly $\oR^{\alpha,\beta}_{\lambda,\mu}(R_0) =
-  \owt(R_0)$ and, by Lemma~\ref{lem:initial E}, 
+  \owt(R_0)$ and, by Lemma~\ref{lem:initial E},
   \[
 \EE^{\alpha,\beta}_{\lambda,\mu}(R_0) = \owt(R_0)
 E^{\alpha,B(R_0,\beta)}_{\mu,\mu}(C(\rho)) = \owt(R_0).
-  \]  
+  \]
 
   For the inductive step let $0<N\le|\lm|$ and assume the assertion for $N-1$.
   Since $\rho\ne\lm$, we can find $(r,c)\in\lm$ such that $\rho=\{(i,j)\in\lm:
@@ -1751,16 +1758,16 @@ E^{\alpha,B(R_0,\beta)}_{\mu,\mu}(C(\rho)) = \owt(R_0).
 =\oR^{\alpha,\beta}_{\lambda,\mu}(R_0),
 \]
 where $a$ and $\wb$ are given as in Proposition~\ref{prop:rec RPP R0}.
-Hence the assertion still holds for $N$ and the proof follows by induction. 
+Hence the assertion still holds for $N$ and the proof follows by induction.
 \end{proof}
 
 
 
 Now we are ready to prove Theorem~\ref{thm:col_flag2}, which can be restated as
-follows. 
+follows.
 
 \begin{thm}\label{thm:flag e2}
-  Let $\alpha,\beta\in\NN^n$ and $\mu,\lambda\in\Par_n$. 
+  Let $\alpha,\beta\in\NN^n$ and $\mu,\lambda\in\Par_n$.
 If $\alpha_i\le \alpha_{i+1}+1$ and $\beta_i\le \beta_{i+1}+1$ whenever
 $\mu_i<\lambda_{i+1}$, then
 \begin{equation}
@@ -1823,7 +1830,7 @@ E_{\lambda,\mu}^{\alpha,\beta} = \oR_{\lambda,\mu}^{\alpha,\beta}(\emptyset).
   since the skew shape $\lm$ is the disjoint union of $\lambda^{(1)}/\mu^{(1)}$
   and $\delta^k(\lambda^{(2)}/\mu^{(2)})$, where $\gamma^{(1)}=(\gamma_1,\dots,\gamma_k)$
   and $\gamma^{(2)}=(\gamma_{k+1},\dots,\gamma_n)$ for each
-  $\gamma\in\{\alpha,\beta,\lambda,\mu\}$. 
+  $\gamma\in\{\alpha,\beta,\lambda,\mu\}$.
   For all $k+1\le i\le n$ and $1\le j\le k$, we have
   $e^{\alpha,\beta}_{\lambda,\mu}(i,j)=0$ because
  \[
@@ -1908,7 +1915,7 @@ define
   h_{\lambda,\mu}^{\alpha,\beta}(i,j) &=
   h_{\lambda_i-i-\mu_j+j}[X_{(\alpha_j,\beta_i]}+T_{i-1}-T_{j-1}],\\
   \ovh_{\lambda,\mu}^{\alpha,\beta}(i,j)
-  &= \chi(\alpha_j<\beta_i) h_{\lambda,\mu}^{\alpha,\beta}(i,j),\\ 
+  &= \chi(\alpha_j<\beta_i) h_{\lambda,\mu}^{\alpha,\beta}(i,j),\\
   h_{\lambda,\mu}^{\alpha,\beta}(C;i,j)
   &= \begin{cases}
       h_{\lambda,\mu}^{\alpha,\beta}(i,j), & \mbox{if $i\not\in C$},\\
@@ -1925,7 +1932,7 @@ If $\mu\subseteq\lambda$, $\rho=(\lm)^{(m)}$, and
 $R_0\in\RPP^{\row(\alpha,\beta)}_\rho$, we define
 \begin{equation}
   \label{eq:defHH}
-  \HH_{\lambda,\mu}^{\alpha,\beta}(R_0) = \wt(R_0) 
+  \HH_{\lambda,\mu}^{\alpha,\beta}(R_0) = \wt(R_0)
   \ovH_{\lambda-\rho,\mu}^{\alpha,B(R_0,\beta)}.
 \end{equation}
 \end{defn}
@@ -1959,7 +1966,7 @@ Section~\ref{sec:proof-jacobi-trudi1}.
   (single) variable. Then, for any integer $k$,
   \[
 h_k[Z]=h_k[Z-z] + z h_{k-1}[Z].
-  \]  
+  \]
 \end{lem}
 \begin{proof}
   Since $h_k(x)=0$ for $k<0$ and $h_0(x)=1$, the equation holds for $k\le 0$.
@@ -1967,7 +1974,7 @@ h_k[Z]=h_k[Z-z] + z h_{k-1}[Z].
   \[
     h_k[Z-z]=\sum_{i=0}^k (-1)^i e_i(z)h_{k-i}[Z]=
     h_{k}[Z]- zh_{k-1}[Z],
-  \]  
+  \]
 which is equivalent to the equation in the lemma.
 \end{proof}
 
@@ -1977,14 +1984,14 @@ which is equivalent to the equation in the lemma.
   $j\ge i$ and $k>j-i$. Then
   \[
     h_k[T_{i-1}-T_{j-1}]=0.
-  \] 
+  \]
 \end{lem}
 \begin{proof}
   By the property \eqref{eq:h_k[-A]} of the plethystic substitution, we have
   \[
     h_k[T_{i-1}-T_{j-1}]=h_k[-t_i-t_{i+1}-\dots-t_{j-1}]
     = (-1)^k e_k(t_i,t_{i+1},\dots,t_{j-1}) = 0,
-  \]  
+  \]
   as desired.
 \end{proof}
 
@@ -1995,12 +2002,12 @@ which is equivalent to the equation in the lemma.
   $\alpha<\beta$, then
 \[
   H^{\alpha,\beta}_{\mu,\mu}(C) = 1.
-\] 
+\]
 \end{lem}
 \begin{proof}
   This can be proved by the same argument as in the proof of
   Lemma~\ref{lem:initial E}. Note that we need the condition $\alpha<\beta$ to
-  ensure that the $(i,i)$ entry 
+  ensure that the $(i,i)$ entry
 \[
 h^{\alpha,\beta}_{\mu,\mu}(C;i,i) =
   \chi(\alpha_i<\beta_i) h^{\alpha,\beta}_{\mu,\mu}(i,i)
@@ -2014,11 +2021,11 @@ is $1$ for $i\in C$.
   $\mu\not\subseteq\lambda$, then for any $C\subseteq[n]$,
 \[
   H^{\alpha,\beta}_{\lambda,\mu}(C) = 0.
-\] 
+\]
 \end{lem}
 \begin{proof}
 This can be proved by the same argument as in the proof of
-Lemma~\ref{lem:E(C)=0}. 
+Lemma~\ref{lem:E(C)=0}.
 \end{proof}
 
 
@@ -2039,10 +2046,10 @@ H^{\alpha,\beta}_{\lambda,\mu}(C)  = 0.
   $X_{(\alpha_j,\beta_i]} = 0$. Because of this, and of
   \[
 \lambda_i-i-\mu_j+j\ge \lambda_k-\mu_k-i+j>j-i,
-  \]  
+  \]
   by Lemma~\ref{lem:h=0},
   \[
-h^{\alpha,\beta}_{\lambda,\mu}(i,j) = h_{\lambda_i-i-\mu_j+j}[X_{(\alpha_j,\beta_i]}+T_{i-1}-T_{j-1}] = 
+h^{\alpha,\beta}_{\lambda,\mu}(i,j) = h_{\lambda_i-i-\mu_j+j}[X_{(\alpha_j,\beta_i]}+T_{i-1}-T_{j-1}] =
 h_{\lambda_i-i-\mu_j+j}[T_{i-1}-T_{j-1}]=0,
   \]
   as desired.
@@ -2064,7 +2071,7 @@ H^{\alpha,\beta}_{\lambda,\mu}(C)  = H^{\alpha,\beta}_{\lambda,\mu}(C\setminus\{
   It is sufficient to show that for all $1\le j\le n$,
   \begin{equation}
     \label{eq:4}
-h^{\alpha,\beta}_{\lambda,\mu}(C;k,j) = h^{\alpha,\beta}_{\lambda,\mu}(C\setminus \{k\};k,j).    
+h^{\alpha,\beta}_{\lambda,\mu}(C;k,j) = h^{\alpha,\beta}_{\lambda,\mu}(C\setminus \{k\};k,j).
   \end{equation}
   For a contradiction suppose that \eqref{eq:4} does not hold for some
   $1\le j\le n$. Since
@@ -2171,7 +2178,7 @@ which together with \eqref{eq:ovH=H+ovH} finishes the proof.
 
 \begin{lem}\label{lem:H=H+tH}
   Let $\alpha,\beta,\mu,\lambda\in\NN^n$, and $2\le k\le n$
-  with $\beta_k=\beta_{k-1}$ and $\lambda_k=\lambda_{k-1}+1$. Then 
+  with $\beta_k=\beta_{k-1}$ and $\lambda_k=\lambda_{k-1}+1$. Then
 \[
   \ovH_{\lambda,\mu}^{\alpha,\beta} = t_{k-1}
   \ovH_{\lambda-\epsilon_k,\mu}^{\alpha,\beta}.
@@ -2219,7 +2226,7 @@ under certain conditions.
   $\wb=(\wb_1,\dots,\wb_n)=B(R_0,\beta)$. Then
   \begin{align}
     \label{eq:rec M2}
-    \R^{\alpha,\beta}_{\lambda,\mu}(R_0) 
+    \R^{\alpha,\beta}_{\lambda,\mu}(R_0)
     &= \sum_{k=a}^{\wb_r} \R^{\alpha,\beta}_{\lambda,\mu}(R_0\cup\{k\}),\\
     \label{eq:rec H}
     \HH^{\alpha,\beta}_{\lambda,\mu}(R_0)
@@ -2242,7 +2249,7 @@ a = \begin{cases}
 s = \begin{cases}
   \wb_r-\wb_{r-1}+1, & \mbox{if $(r-1,c)\in\rho$
   and $\wb_{r-1}\ge\alpha_r+1$} ,\\
-\wb_r-\alpha_r, &\mbox{otherwise} . 
+\wb_r-\alpha_r, &\mbox{otherwise} .
 \end{cases}
   \]
   Note that $\beta \in \RPar_n \subseteq \QPar_n$ and
@@ -2293,7 +2300,7 @@ Lemma~\ref{lem:H=H+tH} gives
   \ovH^{\alpha,\wb-(s-1)\epsilon_r}_{\lambda-\rho,\mu}  = t_{r-1}
   \ovH^{\alpha,\wb-(s-1)\epsilon_r}_{\lambda-\rho-\epsilon_r,\mu}.
 \end{equation}
-By \eqref{eq:5.11} and \eqref{eq:5} we obtain 
+By \eqref{eq:5.11} and \eqref{eq:5} we obtain
 \begin{equation}
   \label{eq:6}
   \ovH^{\alpha,\wb}_{\lambda-\rho,\mu} = t_{r-1}
@@ -2308,7 +2315,7 @@ we can rewrite \eqref{eq:defHH} as
   \HH_{\lambda,\mu}^{\alpha,\beta}(R_0)
   = \wt(R_0) \ovH_{\lambda-\rho,\mu}^{\alpha,\wb}.
 \]
-Since 
+Since
 \begin{align*}
 t_{r-1}\wt(R_0) &= \wt(R_0\cup\{\wb_{r-1}\}) = \wt(R_0\cup\{\wb_{r}-(s-1)\}),\\
   x_{\wb_r-i} \wt(R_0)&=\wt(R_0\cup\{\wb_r-i\})
@@ -2320,7 +2327,7 @@ multiplying both sides of
   \HH^{\alpha,\beta}_{\lambda,\mu}(R_0)
     = \sum_{i=0}^{s-1} \wt(R_0\cup\{\wb_r-i\}) \ovH_{\lambda-\rho-\epsilon_r,\mu}^{\alpha,\wb-i\epsilon_r}
     = \sum_{i=0}^{s-1} \HH^{\alpha,\beta}_{\lambda,\mu}(R_0\cup\{\wb_r-i\}),
-\]  
+\]
 where the last equality follows from $\wb-i\epsilon_r =
 B(R_0\cup\{\wb_r-i\},\beta)$. The above equation is the same as \eqref{eq:rec
   H}.
@@ -2366,7 +2373,7 @@ multiplying both sides of the above equation by $\wt(R_0)$ gives
 \[
   \HH^{\alpha,\beta}_{\lambda,\mu}(R_0)
     = \sum_{i=0}^{s-1} \HH^{\alpha,\beta}_{\lambda,\mu}(R_0\cup\{\wb_r-i\}),
-\]  
+\]
 which is the same as \eqref{eq:rec H}.
 This completes the proof.
 \end{proof}
@@ -2400,13 +2407,13 @@ By the same argument as in the proof of \eqref{eq:E=dd} we have
 \]
 Therefore, it suffices to show that
 \[
-\det(h_{\sigma,\mu}^{\alpha,\kappa}([n]\setminus\{r\};i,j))_{d\le i,j\le n} = 0.  
+\det(h_{\sigma,\mu}^{\alpha,\kappa}([n]\setminus\{r\};i,j))_{d\le i,j\le n} = 0.
 \]
 By Lemma~\ref{lem:det=0}, in order to show the above equation it is enough to
 show that, for all $d\le i\le r$ and $r\le j\le n$,
 \begin{equation}
   \label{eq:1}
- h_{\sigma,\mu}^{\alpha,\kappa}([n]\setminus\{r\};i,j) = 0. 
+ h_{\sigma,\mu}^{\alpha,\kappa}([n]\setminus\{r\};i,j) = 0.
 \end{equation}
 By Definition~\ref{defn:H} we have
     \[
@@ -2446,7 +2453,7 @@ Thus, Lemma~\ref{lem:h=0} gives
 \end{equation}
 By \eqref{eq:2} and \eqref{eq:9} we obtain \eqref{eq:1} for $i=r$ and $r\le j\le n$.
 
-It remains to prove \eqref{eq:1} for $d\le i\le r-1$ and $r\le j\le n$. 
+It remains to prove \eqref{eq:1} for $d\le i\le r-1$ and $r\le j\le n$.
 In this case,
 \[
       h^{\alpha,\kappa}_{\sigma,\mu}([n]\setminus\{r\};i,j)=
@@ -2475,7 +2482,7 @@ be used to show that they are equal.
   $\mu<\lambda$. Let $\rho=(\lm)^{(m)}$ for some $0\le m\le|\lm|$ and let
   $R_0\in \RPP^{\row(\alpha,\beta)}_{\rho}$. Then
 \[
-\HH^{\alpha,\beta}_{\lambda,\mu}(R_0) = \R^{\alpha,\beta}_{\lambda,\mu}(R_0). 
+\HH^{\alpha,\beta}_{\lambda,\mu}(R_0) = \R^{\alpha,\beta}_{\lambda,\mu}(R_0).
 \]
 \end{prop}
 \begin{proof}
@@ -2488,10 +2495,10 @@ be used to show that they are equal.
 
 
 Now we are ready to prove Theorem~\ref{thm:row_flag}, which can be restated as
-follows. 
+follows.
 
 \begin{thm}\label{thm:flag h2}
-  Let $\alpha,\beta\in\NN^n$ and $\mu,\lambda\in\Par_n$. 
+  Let $\alpha,\beta\in\NN^n$ and $\mu,\lambda\in\Par_n$.
 If
   $\alpha_i\le \alpha_{i+1}$ and $\beta_i\le \beta_{i+1}$ whenever
   $\mu_i<\lambda_{i+1}$, then
@@ -2585,11 +2592,11 @@ H_{\lambda,\mu}^{\alpha,\beta} = \R_{\lambda,\mu}^{\alpha,\beta}(\emptyset).
   Proposition~\ref{prop:main h},
   \[
     H_{\lambda,\mu}^{\alpha,\beta} = H_{\lambda,\mu}^{\alpha,\beta}([n]) =
-    \ovH_{\lambda,\mu}^{\alpha,\beta} = 
-    \HH_{\lambda,\mu}^{\alpha,\beta}(\emptyset) = 
+    \ovH_{\lambda,\mu}^{\alpha,\beta} =
+    \HH_{\lambda,\mu}^{\alpha,\beta}(\emptyset) =
     \R_{\lambda,\mu}^{\alpha,\beta}(\emptyset),
   \]
-which completes the proof. 
+which completes the proof.
 \end{proof}
 
 
@@ -2698,4 +2705,4 @@ M.~L. Wachs.
 
 \end{thebibliography}
 
-\end{document}
+\end{document} 
