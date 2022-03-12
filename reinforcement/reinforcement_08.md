@@ -20,7 +20,7 @@ $\forall\varepsilon >0 , \exists N~~s.t~~|v_n - v|<\epsilon~~for~~\forall n > N$
 위의 식에서 중요한 것이 수렴하는 v를 미리 알아야 한다는 것이다. 근데 이는 상황에 따라 매우 어려운 문제일 수도 있다. 즉 $v_n$만 주어지고 이 값이 수렴하는지 않하는지를 판단해야 하는 경우가 많은데 이 때 사용하는 것이 cauchy sequence이다. 
 
 ## cauchy sequence
-Let $v_n$(n &geq; 0) be a sequence of vectors of a normed vectorspace V = (V,||.||). Then $v_n$ is called a Cauchy-sequence if   
+Let $v_n$(n &geq; 0) be a sequence of vectors of a normed vector space V = (V,||.||). Then $v_n$ is called a Cauchy-sequence if   
 $\displaystyle \lim_{ n\to \infty } \underset{m \geq n}{sup} ||v_n - v_m || =0$  
 이를 간략히 나타내면 아래와 같다.  
 $\forall\varepsilon >0 , \exists N~~s.t~~|v_n - v_m|<\epsilon~~for~~ m,n > N$  
@@ -39,7 +39,7 @@ def notation ||v||
 vector들의 집합인데 vector 합에 대해 닫혀있고 scalar multiple에 닫혀있어야 한다. 
 
 ##  Complete
-A normed vector space V is called complete if every Cauchy sequence in V is convergent in the norm of the vector space.
+A normed vector space V= (V,||.||) is called complete if every Cauchy sequence in V is convergent in the norm of the vector space.
 
 ## Banach Space
 A complete, normed vector space is called a Banach space.
@@ -53,6 +53,7 @@ $\forall\varepsilon >0 , \exists N~~s.t~~||v_n - v||<\epsilon~~for~~ n > N$
 ## Lipschitz
 Let V = (V,||.||) be a normed vector space. A mapping T : V -> V is called L-Lipschitz if for any u,v &in; V,
 $$||Tu-Tv|| \leq L||u-v|| $$
+- 여기서 T는 operator을 의미한다.
 - if L<1 , T is called L-contraction or simply a contraction
 - if T is Lipschitz, T is continuous 
 - - continuous의 정의 
