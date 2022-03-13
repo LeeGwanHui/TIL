@@ -31,7 +31,7 @@ T(s): the set of all time steps in which state s is visited
 T(t): the first time of termination following time t
 - Ordinary importance sampling (unbiased, higher variance)
 $$V(s)=\frac{\sum_{t \in T(s)}^{}\rho_{t:T(t)-1}G_t}{|T(s)|}$$
-- 수학적으로는 ideal하게 converge하지만 b가 매우 작은 수고 &pi;가 매우 큰 수면 값이 매우 큰 것을 $G_t$ 에 곱하기 때문에 variance가 심해질 수 있다. 그래서 아랫방법이 나왔다.
+- - 수학적으로는 ideal하게 converge하지만 b가 매우 작은 수고 &pi;가 매우 큰 수면 값이 매우 큰 것을 $G_t$ 에 곱하기 때문에 variance가 심해질 수 있다. 그래서 아랫방법이 나왔다.
 - Weighted importance sampling (biased, lower variance) : 수학적으로 ideal하지는 않음
 $$V(s)=\frac{\sum_{t \in T(s)}^{}\rho_{t:T(t)-1}G_t}{\sum_{t \in T(s)}^{}\rho_{t:T(t)-1}}$$
 
@@ -52,7 +52,7 @@ $$V(S_t) \leftarrow V(S_t) + \alpha(G_t-V(S_t))$$
 - Weighted Importance Sampling
 $$V(s)=\frac{\sum_{k=1}^{n-1}W_kG_t}{\sum_{n-1}^{k=1}W_k}$$
 where $W_k = \rho_{k:T(k)-1} $.
-- incremental update rule: (n $\geq$1)
+- incremental update rule: (n $\geq$ 1)
 $$V_{n+1} = V_n + \frac{W_n}{C_n}(G_n-V_n)$$
 $$C_{n+1} = C_n +W_{n+1}$$  
 - - where $C_0=0$.
