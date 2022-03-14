@@ -90,5 +90,5 @@ $${G_t}^\lambda = (1-\lambda)\sum_{n=1}^{\infty}\lambda^{n-1}G_{t:t+n}+ \lambda^
 ## Forward-view TD(&lambda;) : 먼 미래를 바라본다는 의미
 - Forward-view(theoretical view) : for each state visited, look forward in time to all the future rewards
 - Forward-view looks into the future to compute ${G_t}^\lambda$
-- Like MC, can only be computed from complete episodes : intrinsically off-line method : 먼 미래까지 보기 때문에  : 성능은 좋아지지만 online이라는 장점을 잃어버려서 실용적이지 않아서 잘 쓰지 않음.  
+- Like MC, can only be computed from complete episodes : intrinsically off-line method : 먼 미래까지 보기 때문에  : 성능은 좋아지지만 online이라는 장점을 잃어버려서 실용적이지 않아서 잘 쓰지 않음.  -> 이를 해결한 방법은 다음시간에 배움
 ![title](./img/78_TD.PNG)
