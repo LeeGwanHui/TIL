@@ -1,4 +1,4 @@
-# 11강 Model-Free Prediction :- Monte Carlo and Temporal Difference Methods(3) : 서울대학교 이정우 교수님
+# 12강 Model-Free Prediction :- Monte Carlo and Temporal Difference Methods(3) : 서울대학교 이정우 교수님
 
 ## Temporal Difference Method
 - Temporal Difference (TD) : most central and novel idea in RL
@@ -64,3 +64,5 @@ $$\sum_{n=1}^{\infty}\alpha_n = \infty, \sum_{n=1}^{\infty}{\alpha_n}^2<\infty$$
 $\sum_{k=1}^{K}\sum_{t=1}^{T_k}({G_t}^k-V({S_t}^k))^2$
 - TD(0) converges to solution of maximum likelihood Markov model: Solution to the MDP $<S,A,\hat{P},\hat{R},\gamma>$ that best fits the data  
 ![title](./img/68_Certainty.PNG)
+
+- Nonbatch TD(0) may be faster than constant &alpha; MC because it is moving toward certainty-equivalence estimate.
