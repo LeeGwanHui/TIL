@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.11)  15 MAR 2022 15:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.11)  15 MAR 2022 15:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/git_folder/TIL/deeplearning_ham/1week/latex/EEE4423-pre-report_sample.tex
-(c:/git_folder/TIL/deeplearning_ham/1week/latex/EEE4423-pre-report_sample.tex
+**c:/git_folder/TIL/deeplearning_ham/3week/pre-report/pre-report.tex
+(c:/git_folder/TIL/deeplearning_ham/3week/pre-report/pre-report.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (./bmvc2k.cls
 Document Class: bmvc2k 2014/07/14 BMVC Proceedings. v0.11
@@ -325,8 +325,8 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [letter].
 
-(./EEE4423-pre-report_sample.aux)
-\openout1 = `EEE4423-pre-report_sample.aux'.
+(./pre-report.aux)
+\openout1 = `pre-report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
@@ -412,93 +412,83 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 10.
 LaTeX Info: Redefining \pageref on input line 10.
 LaTeX Info: Redefining \nameref on input line 10.
- (./EEE4423-pre-report_sample.out) (./EEE4423-pre-report_sample.out)
+ (./pre-report.out) (./pre-report.out)
 \@outlinefile=\write3
-\openout3 = `EEE4423-pre-report_sample.out'.
+\openout3 = `pre-report.out'.
 
 \bmv@box authname1 =\box57
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 17.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 15.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 17.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 15.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 17.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 15.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 17.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 15.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 17.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 15.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 17.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 15.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
 \bmv@box authnameFN1 =\box58
 \bmv@box authmail1 =\box59
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
 \bmv@cnt authinst1 =\count305
 \bmv@box inst1 =\box60
 \bmv@box instFN1 =\box61
 
-Overfull \hbox (893.70103pt too wide) in paragraph at lines 25--25
+Overfull \hbox (893.70103pt too wide) in paragraph at lines 21--21
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 25.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 21.
 (c:/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Overfull \hbox (0.54855pt too wide) in paragraph at lines 48--59
-\T1/ptm/m/n/9 This dif-fers from pre-vi-ous plumbline work in two ways: first, a factorization-
- []
+) (./pre-report.bbl
 
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 71.
-(c:/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-<images/fig1.jpg, id=16, 1029.8475pt x 1445.4pt>
-File: images/fig1.jpg Graphic file (type jpg)
-<use images/fig1.jpg>
-Package pdftex.def Info: images/fig1.jpg  used on input line 141.
-(pdftex.def)             Requested size: 271.58157pt x 381.15451pt.
- [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+Package natbib Warning: Empty `thebibliography' environment on input line 8.
+
+) [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
- <./images/fig1.jpg>] (./EEE4423-pre-report_sample.bbl) [2] (./EEE4423-pre-report_sample.aux)
-Package rerunfilecheck Info: File `EEE4423-pre-report_sample.out' has not changed.
+] (./pre-report.aux)
+Package rerunfilecheck Info: File `pre-report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10650 strings out of 478276
- 164859 string characters out of 5850489
- 495230 words of memory out of 5000000
- 28638 multiletter control sequences out of 15000+600000
- 522524 words of font info for 107 fonts, out of 8000000 for 9000
+ 10546 strings out of 478276
+ 163409 string characters out of 5850489
+ 457767 words of memory out of 5000000
+ 28581 multiletter control sequences out of 15000+600000
+ 509659 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,21n,76p,390b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on EEE4423-pre-report_sample.pdf (2 pages, 463862 bytes).
+ 70i,9n,76p,319b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on pre-report.pdf (1 page, 27856 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 32 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
+ 3 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
