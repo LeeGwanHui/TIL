@@ -76,9 +76,9 @@ v<sub>&pi;</sub>(s) = E<sub>&pi;</sub>[G<sub>t</sub> | S<sub>t</sub> = s]
 - value function for MRP와의 차이는 policy &pi;에 dependent하다는 것이다. 즉, MDP에서 expectation을 취할 때 random variable은 state와 action 두개이다.
 
 ## action-value function : MDP에서는 새로운 function이 추가적으로 정의한다.
-Def. The action-value function q(s,a) is the expected return starting from state s, taking action a, and then following policy &pi;
+Def. The action-value function q(s,a) is the expected return starting from state s, taking action a, and then following policy &pi;  
 q<sub>&pi;</sub>(s,a) = E<sub>&pi;</sub>[G<sub>t</sub> | S<sub>t</sub> = s, A<sub>t</sub> = a]  
 - conditional variable에 action이 추가되었다는 것이 value function과의 유일한 차이다.
 
 ## Bellman Expectation Equation for V<sup>&pi;</sup>
-![title](./img/10_Bellman.PNG)
+![title](./img/10_bellman.PNG)
