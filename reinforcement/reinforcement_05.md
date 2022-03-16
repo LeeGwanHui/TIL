@@ -1,10 +1,9 @@
 # 5강 Markov Decision Process(4), Dynamic Programming : 서울대학교 이정우 교수님
 
-모든 가능한 policy의 갯수 : |A|<sup>|s|</sup> -> 이중에 optimal policy를 찾는 것이다.
+모든 가능한 policy의 갯수 : |A|<sup>|s|</sup> -> 이중에 optimal policy를 찾는 것이다.  
 ![title](./img/21_optimal.PNG)
-- max가 붙어서 nonlinear 해져서 그냥 풀기는 어렵다.    
-
-![title](./img/20_optimal.PNG)
+- max가 붙어서 nonlinear 해져서 그냥 풀기는 어렵다.      
+![title](./img/20_optimal.PNG)  
 ![title](./img/19_optimal.PNG)
 
 ## example : recycling robot
@@ -54,7 +53,7 @@ d(s) = &Sigma;<sub>s'</sub> d(s') P<sub>s's
 - Classical DP
 - - Assumption : a perfect model -> planning
 - - High computational complexity, but still theoretically important
-- DP in rein forcemnet learning : approximate methods to classical DP without a perfect model
+- DP in reinforcemnet learning : approximate methods to classical DP without a perfect model
 
 ## Properties of DP : MDP 문제에 해당
 전체의 optimal solution은 부분의 optimal solution으로 구할 수 있다.
@@ -77,7 +76,7 @@ Planning : assuming full knowledge of model(MDP)
 - Solution : iterative application of Bellman expectation
 - v<sub>1</sub> -> v<sub>2</sub> -> ... v<sub>&pi;</sub>
 - convergence : can be proven by Banach fixed point theorem
-- Bellman expectation equation
+- Bellman expectation equation  
 ![title](./img/26_Bellman.PNG)
-- Update rule(assignment) for iterative policy evaluation
+- Update rule(assignment) for iterative policy evaluation  
 ![title](./img/27_Bellman.PNG)
