@@ -2,7 +2,7 @@
 
 ## Equivalence Summary
 <img src="./img/85_summary.PNG">  
-
+ 
 ## Model-Free Contil : MC Control, Sarsa, and Q-learning
 
 ### Review of Generalized Policy Iteration(GPI)
