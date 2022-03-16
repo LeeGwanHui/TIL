@@ -11,8 +11,8 @@ q<sub>&pi;</sub>(s,a) = E<sub>&pi;</sub>[G<sub>t</sub> | S<sub>t</sub> = s, A<su
 - conditional variable에 action이 추가되었다는 것이 value function과의 유일한 차이다.
 
 ## Bellman Expectation Equation for V<sup>&pi;</sup>
-- policy &pi;는 주어져 있다.
-![title](./img/10_Bellman.PNG)
+- policy &pi;는 주어져 있다.  
+![title](./img/10_bellman.PNG)
 - 마지막 줄이 Bellman Equation이다.$||T^\pi U -T^\pi V||_\infty = $  
 $\gamma\underset{x}{sup}|\sum_{y}^{}P(y|x,\pi(x))(U(y)-V(y))| $  
 $\leq \gamma\underset{x}{sup}\sum_{y}^{}P(y|x,\pi(x))||U-V||_\infty $  
@@ -22,15 +22,15 @@ $= \gamma||U-V||_\infty$
 ![title](./img/11_action.PNG)
 ![title](./img/12_action.PNG)
 - 
-model을 정확히 안다고 가정하면 아래처럼 구할 수 있다. : model을 안다는 의미는 P(transition probability)와 R(reward)을 정확히 아는 것이다.
+model을 정확히 안다고 가정하면 아래처럼 구할 수 있다. : model을 안다는 의미는 P(transition probability)와 R(reward)을 정확히 아는 것이다.  
 ![title](./img/13_vector.PNG)
 - 단 바둑이나 장기 같은 다차원의 state의 경우는 계산이 불가능하다.
 
 ## optimal value Function
 - 모든 state s에 대해서 취할 수 있는 모든 가능한 policy중에 최대화 되는 것을 optimal value Function이라고 함.
-- 모든 state s와 action a에 대해서 취할 수 있는 모든 가능한 policy 중에서 최대화 되는 것을 optimal action value function이라고 함.
+- 모든 state s와 action a에 대해서 취할 수 있는 모든 가능한 policy 중에서 최대화 되는 것을 optimal action value function이라고 함.  
 ![title](./img/14_optimal.PNG)
-- optimal value function을 찾는다는 것은 optimal policy를 찾는 것이고 이는 강화학습 문제를 푸는 것이다.
+- optimal value function을 찾는다는 것은 optimal policy를 찾는 것이고 이는 강화학습 문제를 푸는 것이다.  
 ![title](./img/15_optimal.PNG)
 - policy는 정책이지 숫자는 아니지만 위와 같은 식으로 쓸 수 있다고 할때를 나타내는 식이다.  
 위의 증명을 통해서 아래가 성립한다.
@@ -45,5 +45,5 @@ model을 정확히 안다고 가정하면 아래처럼 구할 수 있다. : mode
 
 ## Relationship between v<sub>* </sub> and q<sub>* </sub>
 ![title](./img/17_optimal.PNG)
-- 선 두개 사이 호가 의미하는 것이 max를 취해라는 의미이다.
+- 선 두개 사이 호가 의미하는 것이 max를 취해라는 의미이다.  
 ![title](./img/18_optimal.PNG)
