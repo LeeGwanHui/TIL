@@ -10,7 +10,7 @@ machine learning 중에서 reinforcement learning이 사람의 학습과 가장 
 - 단, 강화학습은 어떤 문제를 푸는 한가지 방법론일 뿐이다. 다시말해, 반드시 강화학습이 유일한 답을 얻는 방법은 아니다.
 
 ## Markov Decision Process : 이론적이고 수학적인 관점
- 현대의 나와있는 강화학습이론은 MDP에 기본해서 해석할 수 있다.
+ 현대의 나와있는 강화학습이론은 MDP에 기본해서 해석할 수 있다.  
  <img src="./img/01_MDP.PNG"> 
 - agent : the learner and the decision maker
 - environment : the thing that an agent interacts with(everything outside agent).
@@ -27,10 +27,10 @@ history가 주어졌을 때 다음에 일어날 일이 history 전체 경로에 
 Def. A state is Markov iff P[S<sub>t+1</sub> | S<sub>t</sub>] = P[S<sub>t+1</sub> | S<sub>1</sub>, S<sub>2</sub>, ... S<sub>t</sub>]
 
 ## State transition matrix
-- P<sub>SS'</sub> = P[S<sub>t+1</sub>=s' | S<sub>t</sub>=s]
-![title](./img/02_Matrix.PNG)
-![title](./img/04_Matrix.PNG)
-![title](./img/03_Matrix.PNG)
+- P<sub>SS'</sub> = P[S<sub>t+1</sub>=s' | S<sub>t</sub>=s]  
+ <img src="./img/02_Matrix.PNG"> 
+ <img src="./img/03_Matrix.PNG"> 
+ <img src="./img/04_Matrix.PNG"> 
 - P where each row sums to 1
 - 위의 P 앞에 현재 time에서 state의 확률 의미하는 q<sub>t</sub>를 곱하면 q<sub>t+1</sub> 값을 얻을 수 있다.
 
