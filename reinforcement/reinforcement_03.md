@@ -22,7 +22,10 @@ Def. The return G<sub>t</sub> is the total discounted reward from time-step t.
 -Needed for an infinite episode. otherwise, return diverges
 - &gamma; = 0, myopic return :근시안적이다. -> 현재 reward만 중시한다.
 - &gamma; = 1, far-sighted return : 원시안적이다. -> 모든 reward를 동등하게 본다.
-- G<sub>t</sub> = R<sub>t+1</sub> + &gamma; [R<sub>t+2</sub>+&gamma;R<sub>t+3</sub>+ ...] =  R<sub>t+1</sub> + &gamma;G<sub>t+1</sub>
+- G<sub>t</sub> = R<sub>t+1</sub> + &gamma; [R<sub>t+2</sub>+&gamma;R<sub>t+3</sub>+ ...] =  R<sub>t+1</sub> + &gamma;G<sub>t+1</sub>  
+![title](./img/05_return_1.PNG)  
+![title](./img/05_return_2.PNG)  
+![title](./img/05_return_3.PNG)  
 
 ## value function for MRP
 Def. The state-value function v(s) of an MRP is the expected return starting from state s,
