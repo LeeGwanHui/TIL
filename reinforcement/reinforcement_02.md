@@ -28,9 +28,9 @@ Def. A state is Markov iff P[S<sub>t+1</sub> | S<sub>t</sub>] = P[S<sub>t+1</sub
 
 ## State transition matrix
 - P<sub>SS'</sub> = P[S<sub>t+1</sub>=s' | S<sub>t</sub>=s]  
- <img src="./img/02_Matrix.PNG"> 
- <img src="./img/03_Matrix.PNG"> 
- <img src="./img/04_Matrix.PNG"> 
+ <img src="./img/02_matrix.PNG"> 
+ <img src="./img/03_matrix.PNG"> 
+ <img src="./img/04_matrix.PNG"> 
 - P where each row sums to 1
 - 위의 P 앞에 현재 time에서 state의 확률 의미하는 q<sub>t</sub>를 곱하면 q<sub>t+1</sub> 값을 얻을 수 있다.
 
