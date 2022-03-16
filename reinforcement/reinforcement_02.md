@@ -11,7 +11,7 @@ machine learning 중에서 reinforcement learning이 사람의 학습과 가장 
 
 ## Markov Decision Process : 이론적이고 수학적인 관점
  현대의 나와있는 강화학습이론은 MDP에 기본해서 해석할 수 있다.
- ![title](./img/01_MDP.PNG)
+ <img src="./img/01_MDP.PNG"> 
 - agent : the learner and the decision maker
 - environment : the thing that an agent interacts with(everything outside agent).
 - Task: a complete specification of an environment including rewards

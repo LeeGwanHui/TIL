@@ -9,6 +9,13 @@
 5강 Markov Decision Process(4), Dynamic Programming  
 6강 Dynamic Programming(2)  
 7강 Dynamic Programming(3)  
+8강 Dynamic Programming(4)  
+9강 Dynamic Programming(5)  
+10강 Model-Free Prediction :- Monte Carlo and Temporal Difference Methods(1)  
+11강 Model-Free Prediction :- Monte Carlo and Temporal Difference Methods(2)  
+12강 Model-Free Prediction :- Monte Carlo and Temporal Difference Methods(3)  
+13강 Model-Free Prediction :- Monte Carlo and Temporal Difference Methods(4)  
+14강 Model-Free Prediction :- Monte Carlo and Temporal Difference Methods(5)  
 
 # latex
 latex 사용법

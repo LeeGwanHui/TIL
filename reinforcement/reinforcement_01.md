@@ -22,7 +22,7 @@ reinforcement는 결국 시행착오로 학습하는 것이다.
 ### introduction to Reinforcement Learning
 2개의 input과 1개의 output  
 #### input
-- observation(O<sub>t</sub>)
+- observation(O<sub>t</sub>=$S_t$)
 - reward(R<sub>t</sub>)
 
 #### output
@@ -44,10 +44,10 @@ reinforcement는 결국 시행착오로 학습하는 것이다.
 
 
 
-## Reinfoceement Learning vs Planning
+## Reinforcement Learning vs Planning
 Reinforcement
-- The environmnet is initially unknown
--The agent interacts with the environmnet
+- The environment is initially unknown
+-The agent interacts with the environment
 
 Planning : 기계공학에서 사용하는 problems in sequential decision making
 - A model of the environment is known
