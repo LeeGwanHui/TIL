@@ -13,7 +13,8 @@ q<sub>&pi;</sub>(s,a) = E<sub>&pi;</sub>[G<sub>t</sub> | S<sub>t</sub> = s, A<su
 ## Bellman Expectation Equation for V<sup>&pi;</sup>
 - policy &pi;는 주어져 있다.  
 ![title](./img/10_bellman.PNG)
-- 마지막 줄이 Bellman Equation이다.$||T^\pi U -T^\pi V||_\infty = $  
+- 마지막 줄이 Bellman Equation이다.  
+$||T^\pi U -T^\pi V||_\infty = $  
 $\gamma\underset{x}{sup}|\sum_{y}^{}P(y|x,\pi(x))(U(y)-V(y))| $  
 $\leq \gamma\underset{x}{sup}\sum_{y}^{}P(y|x,\pi(x))||U-V||_\infty $  
 $= \gamma||U-V||_\infty$  
