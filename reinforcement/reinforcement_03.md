@@ -33,8 +33,8 @@ v(s) = E[G<sub>t</sub> | S<sub>t</sub> = s]
 - Return의 경우 random variable이기 때문에 다루기가 어려워서(시시각각 변하기 때문에) 기댓값을 취한 value function을 다룬다. 이를 최대화하는 것이 목표이다.
 - Bellman Equation for MRP  
 ![title](./img/06_bellman.PNG)
-- E[x] = E[E[x]] : E[x]는 상수이기 때문에 가능함. : 3 -> 4번째 줄에 적용, 사실 독립이라 S<sub>t</sub> 와 S<sub>t+1</sub>의 순서를 바꿀 수 있다도 적용되어 있다.
-- 5->6 번줄은 Markov Process라고 가정했기 때문에 transition probability에만 영향을 받기 때문에 이런식으로 유도된다.
+- E[x] = E[E[x]] : E[x]는 상수이기 때문에 가능함. : 사실 독립이라 S<sub>t</sub> 와 S<sub>t+1</sub>의 순서를 바꿀 수 있다도 적용되어 있다.
+- Markov Process라고 가정했기 때문에 transition probability에만 영향을 받기 때문에 이런식으로 유도된다.
 - 핵심 : 현재 state의 value function은 다음 state의 value function으로 표현가능하다.  : Markov Process라서 가능한 중요한 수식이다. 
 - 직관적 이해 아래 사진을 보자 : 현재에 1에 있다고 했을 때 다음 나의 행동으로 향할 모든 상태의 확률을 각 state의 value function에 곱해서 모두 더하면 현재 value function을 구할 수 있다.  
 ![title](./img/07_understand.PNG)
