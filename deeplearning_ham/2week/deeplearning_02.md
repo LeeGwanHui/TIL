@@ -21,6 +21,10 @@ linear regression을 위해 우리가 필요한 것은 아래 세가지 이다.
 ![title](./img/05_poly1d.PNG)  
 ![title](./img/06_poly1d.PNG)  
 
+- torch.max
+- - _, predicted = torch.max(outputs.data, 1)
+- -  outputs의 각 결과에서 가장 큰 값 1개만 뽑는다는 얘기입니다. 원래 반환값으로 values 와 indices가 있는데 values는 실제 입력데이터에서 가장 큰 값들이고 indices는 그 가장 큰 값들의 index가 나옵니다. 저희에게 필요한것은 index뿐이르모 values는 버리고 indices만 prediceted 변수에 받아오는 것입니다.
+
 - GPU에 돌리기 위해서는 반드시 model과 input을 GPU로 올려야한다.
 
 - SGD의 정의
