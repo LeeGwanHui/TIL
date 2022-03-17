@@ -13,11 +13,11 @@ linear regression을 위해 우리가 필요한 것은 아래 세가지 이다.
 - objective function [nn.MSELoss()]: loss function
 
 ### 실습 코드에 대해
-- np.unique(x)
+- np.unique(x)  
 ![title](./img/03_unique.PNG)  
-- np.polyfit()
+- np.polyfit()  
 ![title](./img/04_polyfit.PNG)  
-- nn.poly1d
+- nn.poly1d  
 ![title](./img/05_poly1d.PNG)  
 ![title](./img/06_poly1d.PNG)  
 
