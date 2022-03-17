@@ -20,7 +20,7 @@ Karen Simonyan & Andrew Zisserman
 ### configurations
 <img src="./img/02_VGG.PNG" width="500" height="500">  
 
-- VGG19(E)  
+- VGG16  
 <img src="./img/01_VGG.PNG" width="500" height="300">
 
 ### Discussion

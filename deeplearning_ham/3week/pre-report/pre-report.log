@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.11)  15 MAR 2022 15:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.11)  17 MAR 2022 20:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -312,13 +312,79 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip60
+) (c:/texlive/2021/texmf-dist/tex/latex/cjk-ko/kotex.sty
+Package: kotex 2015/04/19 v1.6 Korean TeX (ko.TeX)
+ (c:/texlive/2021/texmf-dist/tex/latex/kotex-utf/kotex.cfg) (c:/texlive/2021/texmf-dist/tex/latex/kotex-utf/kotexutf.sty
+Package: kotexutf 2015/07/18 v2.1.1 typesetting UTF-8 Korean documents
+ (c:/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
+) (c:/texlive/2021/texmf-dist/tex/plain/kotex-plain/kotexutf-core.tex
+\unih@ngulpoint=\count297
+\dhucs@emph@raise=\dimen169
 )
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 10.
+Now handling font encoding LUC ...
+... processing UTF-8 mapping file for font encoding LUC
+ (c:/texlive/2021/texmf-dist/tex/latex/kotex-utf/lucenc.dfu
+File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+3001 (decimal 12289)
+   defining Unicode char U+3002 (decimal 12290)
+   defining Unicode char U+3008 (decimal 12296)
+   defining Unicode char U+3009 (decimal 12297)
+   defining Unicode char U+300A (decimal 12298)
+   defining Unicode char U+300B (decimal 12299)
+   defining Unicode char U+300C (decimal 12300)
+   defining Unicode char U+300D (decimal 12301)
+   defining Unicode char U+300E (decimal 12302)
+   defining Unicode char U+300F (decimal 12303)
+   defining Unicode char U+3010 (decimal 12304)
+   defining Unicode char U+3011 (decimal 12305)
+   defining Unicode char U+3014 (decimal 12308)
+   defining Unicode char U+3015 (decimal 12309)
+   defining Unicode char U+3016 (decimal 12310)
+   defining Unicode char U+3017 (decimal 12311)
+   defining Unicode char U+3018 (decimal 12312)
+   defining Unicode char U+3019 (decimal 12313)
+   defining Unicode char U+301A (decimal 12314)
+   defining Unicode char U+301B (decimal 12315)
+   defining Unicode char U+FF01 (decimal 65281)
+   defining Unicode char U+FF08 (decimal 65288)
+   defining Unicode char U+FF09 (decimal 65289)
+   defining Unicode char U+FF0C (decimal 65292)
+   defining Unicode char U+FF0E (decimal 65294)
+   defining Unicode char U+FF1A (decimal 65306)
+   defining Unicode char U+FF1B (decimal 65307)
+   defining Unicode char U+FF1C (decimal 65308)
+   defining Unicode char U+FF1D (decimal 65309)
+   defining Unicode char U+FF1E (decimal 65310)
+   defining Unicode char U+FF1F (decimal 65311)
+   defining Unicode char U+FF3B (decimal 65339)
+   defining Unicode char U+FF3D (decimal 65341)
+   defining Unicode char U+FF5B (decimal 65371)
+   defining Unicode char U+FF5D (decimal 65373)
+   defining Unicode char U+FF61 (decimal 65377)
+   defining Unicode char U+FF62 (decimal 65378)
+   defining Unicode char U+FF63 (decimal 65379)
+   defining Unicode char U+FF64 (decimal 65380)
+   defining Unicode char U+FF65 (decimal 65381)
+)
+\@josa=\count298
+\josatoks=\toks26
+ (c:/texlive/2021/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
+Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
+)))
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count297
+\l__color_backend_stack_int=\count299
 \l__pdf_internal_box=\box55
 )
 
@@ -328,37 +394,43 @@ LaTeX Warning: Unused global option(s):
 (./pre-report.aux)
 \openout1 = `pre-report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 11.
+LaTeX Font Info:    Trying to load font information for LUC+nanummj on input line 11.
+ (c:/texlive/2021/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
+File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
+)
+LaTeX Font Info:    ... okay on input line 11.
  (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
-\scratchdimen=\dimen169
+\scratchcounter=\count300
+\scratchdimen=\dimen170
 \scratchbox=\box56
-\nofMPsegments=\count299
-\nofMParguments=\count300
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count301
-\MPscratchDim=\dimen170
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
-\everyMPtoPDFconversion=\toks25
+\nofMPsegments=\count301
+\nofMParguments=\count302
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count303
+\MPscratchDim=\dimen171
+\MPnumerator=\count304
+\makeMPintoPDFobject=\count305
+\everyMPtoPDFconversion=\toks28
 ) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -399,7 +471,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 10.
+Package hyperref Info: Link coloring ON on input line 11.
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -407,88 +479,172 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count304
+\c@section@level=\count306
 )
-LaTeX Info: Redefining \ref on input line 10.
-LaTeX Info: Redefining \pageref on input line 10.
-LaTeX Info: Redefining \nameref on input line 10.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
  (./pre-report.out) (./pre-report.out)
 \@outlinefile=\write3
 \openout3 = `pre-report.out'.
 
 \bmv@box authname1 =\box57
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 15.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 14.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 15.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 14.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 15.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 14.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 15.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 14.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 15.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 14.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 15.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 14.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
 \bmv@box authnameFN1 =\box58
 \bmv@box authmail1 =\box59
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
-\bmv@cnt authinst1 =\count305
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
+\bmv@cnt authinst1 =\count307
 \bmv@box inst1 =\box60
 \bmv@box instFN1 =\box61
 
-Overfull \hbox (893.70103pt too wide) in paragraph at lines 21--21
+Overfull \hbox (893.70103pt too wide) in paragraph at lines 18--18
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 21.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 18.
 (c:/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) (./pre-report.bbl
+)
+LaTeX Font Info:    Font shape `LUC/nanummj/b/n' in size <10> not available
+(Font)              Font shape `LUC/nanummj/bx/n' tried instead on input line 32.
+<images/01_VGG.png, id=50, 860.21375pt x 548.0475pt>
+File: images/01_VGG.png Graphic file (type png)
+<use images/01_VGG.png>
+Package pdftex.def Info: images/01_VGG.png  used on input line 45.
+(pdftex.def)             Requested size: 170.71399pt x 113.80554pt.
+<images/02_VGG.png, id=51, 759.58781pt x 120.45pt>
+File: images/02_VGG.png Graphic file (type png)
+<use images/02_VGG.png>
+Package pdftex.def Info: images/02_VGG.png  used on input line 46.
+(pdftex.def)             Requested size: 271.58157pt x 43.06606pt.
+<images/03_VGG.png, id=53, 650.43pt x 494.84875pt>
+File: images/03_VGG.png Graphic file (type png)
+<use images/03_VGG.png>
+Package pdftex.def Info: images/03_VGG.png  used on input line 58.
+(pdftex.def)             Requested size: 142.26135pt x 85.35394pt.
+<images/04_VGG.png, id=54, 767.86874pt x 381.67593pt>
+File: images/04_VGG.png Graphic file (type png)
+<use images/04_VGG.png>
+Package pdftex.def Info: images/04_VGG.png  used on input line 75.
+(pdftex.def)             Requested size: 142.26439pt x 85.35504pt.
 
-Package natbib Warning: Empty `thebibliography' environment on input line 8.
+Overfull \hbox (1.86087pt too wide) in paragraph at lines 65--76
+\LUC/nanummj/m/n/9/b2 ” \T1/ptm/m/n/9 32,64\LUC/nanummj/m/n/9/b9 | Î\LUC/nanummj/m/n/9/c7 t \LUC/nanummj/m/n/9/c0 ¬\LUC/nanummj/m/n/9/c6 ©\LUC/nanummj/m/n/9/d5 \\LUC/nanummj/m/n/9/b2 ä\LUC/nanummj/m/n/9/ac à \LUC/nanummj/m/n/9/d5 \\LUC/nanummj/m/n/9/b2 ä\T1/ptm/m/n/9 .) mo-men-tum=0.9, L2 reg-u-lar-iza-tion(Least
+ []
 
-) [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+Overfull \hbox (2.3724pt too wide) in paragraph at lines 65--76
+\LUC/nanummj/m/n/9/d5 \\LUC/nanummj/m/n/9/ac ^^@\LUC/nanummj/m/n/9/c9 À\LUC/nanummj/m/n/9/b2 ” \T1/ptm/m/n/9 S\LUC/nanummj/m/n/9/b9 | \LUC/nanummj/m/n/9/ac à\LUC/nanummj/m/n/9/c8 ^^U\LUC/nanummj/m/n/9/d5 X\LUC/nanummj/m/n/9/ac à \T1/ptm/m/n/9 tran-ing \LUC/nanummj/m/n/9/c2 Ü\LUC/nanummj/m/n/9/d0 ¨ \LUC/nanummj/m/n/9/ac ƒ\LUC/nanummj/m/n/9/c7 t\LUC/nanummj/m/n/9/ac à \LUC/nanummj/m/n/9/b4 P\LUC/nanummj/m/n/9/bc ˆ\LUC/nanummj/m/n/9/c9 ø \LUC/nanummj/m/n/9/bc )•\LUC/nanummj/m/n/9/c7 <\LUC/nanummj/m/n/9/b8 \\LUC/nanummj/m/n/9/b2 ” \T1/ptm/m/n/9 [$\OML/ztmcm/m/it/9 S[]; S[]$\T1/ptm/m/n/9 ]
+ []
+
+<images/08_residual.PNG, id=55, 803.0pt x 396.48125pt>
+File: images/08_residual.PNG Graphic file (type png)
+<use images/08_residual.PNG>
+Package pdftex.def Info: images/08_residual.PNG  used on input line 80.
+(pdftex.def)             Requested size: 271.58157pt x 134.09401pt.
+[1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
+
+ <./images/01_VGG.png (PNG copy)> <./images/02_VGG.PNG> <./images/03_VGG.png> <./images/04_VGG.PNG>]
+<images/09_residual.PNG, id=118, 501.37312pt x 171.64125pt>
+File: images/09_residual.PNG Graphic file (type png)
+<use images/09_residual.PNG>
+Package pdftex.def Info: images/09_residual.PNG  used on input line 86.
+(pdftex.def)             Requested size: 271.58157pt x 92.97821pt.
+<images/10_residual.PNG, id=119, 359.84438pt x 185.94469pt>
+File: images/10_residual.PNG Graphic file (type png)
+<use images/10_residual.PNG>
+Package pdftex.def Info: images/10_residual.PNG  used on input line 92.
+(pdftex.def)             Requested size: 170.7192pt x 113.81479pt.
+<images/11_residual.PNG, id=120, 875.52094pt x 139.27031pt>
+File: images/11_residual.PNG Graphic file (type png)
+<use images/11_residual.PNG>
+Package pdftex.def Info: images/11_residual.PNG  used on input line 95.
+(pdftex.def)             Requested size: 271.58157pt x 43.20096pt.
+<images/12_residual.PNG, id=121, 449.42906pt x 301.125pt>
+File: images/12_residual.PNG Graphic file (type png)
+<use images/12_residual.PNG>
+Package pdftex.def Info: images/12_residual.PNG  used on input line 105.
+(pdftex.def)             Requested size: 271.58157pt x 181.9721pt.
+LaTeX Font Info:    Font shape `LUC/nanummj/b/n' in size <11> not available
+(Font)              Font shape `LUC/nanummj/bx/n' tried instead on input line 113.
+<images/13_sumary.PNG, id=123, 283.0575pt x 222.8325pt>
+File: images/13_sumary.PNG Graphic file (type png)
+<use images/13_sumary.PNG>
+Package pdftex.def Info: images/13_sumary.PNG  used on input line 116.
+(pdftex.def)             Requested size: 142.26695pt x 85.35725pt.
+<images/14_sumary.PNG, id=124, 304.13625pt x 207.02344pt>
+File: images/14_sumary.PNG Graphic file (type png)
+<use images/14_sumary.PNG>
+Package pdftex.def Info: images/14_sumary.PNG  used on input line 116.
+(pdftex.def)             Requested size: 142.2665pt x 85.3603pt.
+
+Overfull \hbox (14.6619pt too wide) in paragraph at lines 114--117
+[] [] 
+ []
+
+[2 <./images/08_residual.PNG> <./images/09_residual.PNG> <./images/10_residual.PNG> <./images/11_residual.PNG> <./images/12_residual.PNG> <./images/13_sumary.PNG> <./images/14_sumary.PNG>] (./pre-report.bbl
+Underfull \hbox (badness 1215) in paragraph at lines 28--32
+[]\T1/ptm/m/n/9 Yann Le-Cun, Léon Bot-tou, Yoshua Ben-gio, and Patrick Haffner.
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 34--37
+[]\T1/ptm/m/n/9 Karen Si-monyan and An-drew Zis-ser-man.  Very deep con-vo-lu-
+ []
+
+) [3
 
 ] (./pre-report.aux)
 Package rerunfilecheck Info: File `pre-report.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 9ADF0F08040B1F95F4690B5E20430760;1597.
  ) 
 Here is how much of TeX's memory you used:
- 10546 strings out of 478276
- 163409 string characters out of 5850489
- 457767 words of memory out of 5000000
- 28581 multiletter control sequences out of 15000+600000
- 509659 words of font info for 81 fonts, out of 8000000 for 9000
+ 11195 strings out of 478276
+ 174779 string characters out of 5850489
+ 496879 words of memory out of 5000000
+ 29108 multiletter control sequences out of 15000+600000
+ 541238 words of font info for 148 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,9n,76p,319b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on pre-report.pdf (1 page, 27856 bytes).
+ 70i,9n,76p,491b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbad.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbcc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on pre-report.pdf (3 pages, 3702582 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 243 compressed objects within 3 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

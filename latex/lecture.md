@@ -25,3 +25,6 @@ git config --list -> user.name과 user.email이 잘 설정 되어있는지 확�
 
 # git
 commit은 버전이라고 해석해도됨 내가 local computer에서 변경시킨 file을 local 레파지토리에 올리는 것
+
+# KAIST latex 입문 강좌 (수리과학과)
+https://www.youtube.com/watch?v=ysnKC1jEC1s
