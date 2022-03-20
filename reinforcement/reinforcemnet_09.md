@@ -6,7 +6,7 @@
 - (B(X),$||.||_{\infty}$) : Banach space
 - Bellman expectation operator $T^{\pi}$ : B(X) $\rightarrow$ B(X) defined by
 $$(T^\pi V)(x)= r(x,\pi(x))+\gamma \sum_{\gamma}^{}P(y|x,\pi(x))V(y), \forall x \in \chi$$
-- From Bellman expectation equation, $V^\pi$is a fixed point for $T^\pi$ : $T^\pi V^\pi = V^\pi $
+- From Bellman expectation equation, $V^\pi$ is a fixed point for $T^\pi$ : $T^\pi V^\pi = V^\pi $
 - $T^\pi$ is a &gamma;-contraction.
 $||T^\pi U -T^\pi V||_\infty = $  
 $\gamma\underset{x}{sup}|\sum_{y}^{}P(y|x,\pi(x))(U(y)-V(y))| $  
@@ -38,7 +38,7 @@ $= \gamma||U-V||_\infty$
 - 나중에 fixed point에 해당하는 policy가 optimal policy인걸 증명할 때 쓰임.
 
 ## Policy Iteration
-- policy iteration : produces a sequence of policy $pi_1$,$pi_2$,..., where $pi_i$,is greedy w.r.t $V^{\pi_{i-1}}$.
+- policy iteration : produces a sequence of policy $\pi_1$,$\pi_2$,..., where $\pi_i$,is greedy w.r.t $V^{\pi_{i-1}}$.
 - The policy improvement theorem applies to each segment of  $V^{\pi_{i-1}}~\rightarrow\pi_i~\rightarrow V^{\pi_{i}}$ in policy iteration procedure.  
  ![title](./img/62_Policy.PNG)
 

@@ -80,6 +80,6 @@ Karen Simonyan & Andrew Zisserman
 - Multi-scale evaluation : test시 image를 multi scal로 설정하여 평가하는 방식
 
 ### convnet fusion
-D,E로 가지고 ensemble하면 7개 모두 ensemble한 결과보다 좋았다.
+D,E로 가지고 ensemble하면 7개 모두 ensemble한 결과보다 좋았다.  
 <img src="./img/06_VGG.PNG">  
 <img src="./img/07_VGG.PNG">  

@@ -13,19 +13,23 @@
 - - 최종적으로 모든 state에 대해 approximate하게 구하는 deep neural network로 학습시키는 것 : $\widehat{v}(s,w_{k+1})$ -> 이걸 구하는 것이 최종 목표이다.
 
 ## Backgrounds for Convergence Proof : 해석학과 관련 
-수렴성은 아래처럼 표현할 수 있다.  
+수렴성은 아래처럼 표현할 수 있다.  ( limit of a sequence)  
 $\displaystyle \lim_{n \to \infty } v_n = v $  
 이를 좀더 엄밀히 표현하자면  
 $\forall\varepsilon >0 , \exists N~~s.t~~|v_n - v|<\epsilon~~for~~\forall n > N$, $ v_n$ &in; $R$  
-위의 식에서 중요한 것이 수렴하는 v를 미리 알아야 한다는 것이다. 근데 이는 상황에 따라 매우 어려운 문제일 수도 있다. 즉 $v_n$만 주어지고 이 값이 수렴하는지 않하는지를 판단해야 하는 경우가 많은데 이 때 사용하는 것이 cauchy sequence이다. 
+위의 식에서 중요한 것이 수렴하는 v를 미리 알아야 한다는 것이다. 근데 이는 상황에 따라 매우 어려운 문제일 수도 있다. 즉 $v_n$만 주어지고 이 값이 수렴하는지 않하는지를 판단해야 하는 경우가 많은데 이 때 사용하는 것이 cauchy sequence이다.   
+![title](./img/87_def.PNG) 
+
 
 ## cauchy sequence
 Let $v_n$(n &geq; 0) be a sequence of vectors of a normed vector space V = (V,||.||). Then $v_n$ is called a Cauchy-sequence if   
 $\displaystyle \lim_{ n\to \infty } \underset{m \geq n}{sup} ||v_n - v_m || =0$  
 이를 간략히 나타내면 아래와 같다.  
 $\forall\varepsilon >0 , \exists N~~s.t~~|v_n - v_m|<\epsilon~~for~~ m,n > N$  
-위 식의 의미는 어느순간 이상 지나가면 이후의 임의의 sequence 사이가 점점 줄어들면 cauchy sequence라고 한다. 해석학에서 이미 실수 공간 모든 cauchy sequence는 converge한다는 게 증명되어 있다. 이를 이제 vector공간이고 norm이 있도록 확장했을 때 이얘기는 항상 성립하지는 않는다.  
+위 식의 의미는 어느순간 이상 지나가면 이후의 임의의 sequence 사이가 점점 줄어들면 cauchy sequence라고 한다. 해석학에서 이미 실수 공간 모든 cauchy sequence는 converge한다는 게 증명되어 있다.(아래 링크에 증명이 있다.) 이를 이제 vector공간이고 norm이 있도록 확장했을 때 이얘기는 항상 성립하지는 않는다.  
 ![title](./img/47_convergence.PNG)  
+https://www.youtube.com/watch?v=QNecfhHa_qY
+
 
 ## norm : distance에 해당
 아래 세가지로 정의를 내린다.  

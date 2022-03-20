@@ -57,11 +57,11 @@ Computational complexity
 - DP methods described so far used synchronous backups
 - Asynchronous DP backs up states individually, in any order
 - Guaranteed to converge if all states are visited infinitely many times
-- in place DP
+- in place DP : 
 - - synchronous DP uses two copies of v(s) : v<sub>old</sub>(s) and v<sub>new</sub>(s)  
 ![title](./img/43_DP.PNG) 
 - - 여태 배운 건 이전 value function을 가지고 새로운 value function을 구하는 것이었다. 이 두개는 아래 따로 메모리에 저장되어 있다. 한 번 backup할 때마다 업데이트해 나간다. synchronous의 핵심은 old와 new의 value function이 따로 따로 논다는 것이다.
-- - Asynchronous DP uses only one copy of v(s) : in place DP 
+- - Asynchronous DP uses only one copy of v(s) : in place DP  
 ![title](./img/44_DP.PNG) 
 - - 한번 backup하는 중간에 new를 old로 업데이트 한다. 이때는 한 메모리만 사용한다. 반박자 빠른 업데이트라고 생각할 수 있다. 
 - Real- time DP : in place DP를 좀 더 일반화 시킨것
