@@ -23,4 +23,6 @@ latex 사용법
 유튜브 jang Soo Kim 강의 참고 https://jangsookim.github.io/lectures/vscode/vscode_lecture1.html 
 
 # deeplearning_ham
-함범섭 연세대학교 교수 딥러닝 실험 수업 파일
+함범섭 연세대학교 교수 딥러닝 실험 수업 파일  
+논문 리뷰 파일 작성은  
+연세대학교 이병주 학우와 같이 진행했습니다. 
