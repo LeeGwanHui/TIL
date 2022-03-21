@@ -2,7 +2,7 @@
 
 ## importance sampling Off-Policy Prediction
 - Learning control dilemma : one seeks to learn action values conditional on subsequent optimal behavior, but one needs to behave non-optimally in order to explore all actions
-- On-policy methods : a compromise since it learns action values not for the optimal policy, but for a near-optimal policy that still explores.
+- On-policy methods : a compromise(절충안) since it learns action values not for the optimal policy, but for a near-optimal policy that still explores.
 - Off-policy methods : use two policies, one that is learned about and that becomes the optimal policy, and one that is more exploratory and is used to generate behavior.
 - - Target policy : the policy being learned about
 - - Behavior policy : the policy used to generate behavior

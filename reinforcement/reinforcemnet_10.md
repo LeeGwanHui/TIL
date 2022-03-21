@@ -13,7 +13,7 @@ Monte Carlo methods are ways of solving the reinforcement learning problem based
 - Value of a state is the expected return
 - Simply average the returns observed after visits to that state
 - - Converges to expected valued with more observed returns by law of large numbers
-- First-visit MC method estimates value function $v_\pi$(s) as the average of the returns following first visits to s ins each episode : each episode contribute only once for the value of each s.
+- First-visit MC method estimates value function $v_\pi$(s) as the average of the returns following first visits to s in each episode : each episode contribute only once for the value of each s.
 - Every-visit MC method estimates value function $v_\pi$(s) as the average of the returns following all visits to s in each episode : each episode contribute(possibly) multiple times for the value of each s.
 - Both methods converges to $v_\pi$(s) as the number of visits(or first visits) to s goes to infinity
 
@@ -41,7 +41,7 @@ $${V_\pi}^{MC}(s)= \frac{1}{N} \sum_{i=1}^{N} {G_t}^{(i)}$$
 - MC : transitions all the way to the end of an episode
 - Advantages of MC
 - - Ability to learn from actual experience(without a model)
-- - Ability to learn from sumulated experience
+- - Ability to learn from simulated experience
 - - Estimating the value of a single state is independent of the number of states :  
 attractive when one requires the value of only one or a subset of states.
 
