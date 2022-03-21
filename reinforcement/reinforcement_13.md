@@ -6,7 +6,7 @@
 ## TD(0) Backup
 ![title](./img/70_TD.PNG)
 - Bellman equation $V(S_t) = E[R_{t+1} + \gamma V(S_{t+1})]=E[G_t]$
-- 위의 식에서 E은 model-free이기 때문에 구하기 어렵기 때문에 날려버렸다고 생각해라.
+- 위의 식에서 E은 model-free이기 때문에 구하기 어렵기 때문에 날려버렸다고 생각해라. 그래서 TD(0)식에서는 기댓값 항목이 들어있지 않다.
 
 ## DP Backup : full backup
 ![title](./img/71_DP.PNG)
@@ -31,7 +31,7 @@
 ## n-step TD Prediction
 - n-step TD methods
 - - Temporal difference that extends over n-steps later.
-- - it generalizes both MC and TD(0) at its extremes.
+- - it generalizes both MC and TD(0) at its extremes.  
 ![title](./img/73_TD.PNG)
 - For n=1, one-step return 
 $$G_{t:t+1} = R_{t+1} + \gamma V_t(S_{t+1})$$
