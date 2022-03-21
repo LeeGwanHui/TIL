@@ -5,7 +5,7 @@
 - - One of the basic mechanisms of reinforcement learning.
 - - Eligibility traces unify and generalize TD and Monte Carlo methods
 - - Almost any temporal-difference (TD) method (ex., Q-learning of Sarsa) can be combined with eligibility traces
-- - Eligibility traces also provide a way of implementing Monte Carlo methods online and on continuing problems without terminal states
+- - Eligibility traces also provide a way of implementing Monte Carlo methods online and on continuing problems without terminal states (매우 중요)
 - - Only a single trace vector is required rather than a store of the last n feature vectors
 - - Learning occurs continually and uniformly in time rather than being delayes to the end of the episode
 - Forward-view : off-line methods(noncausal methods); it provides theory.
@@ -31,7 +31,7 @@
  $$V(S_t) \leftarrow V(S_t) + \alpha \delta_t E_t(s)$$  
 - Can be extanded to parametrized value function approximation
 <img src="./img/80_back.PNG">  
-- &delta;를 위하 1step만 미해를 봄.
+- &delta;를 위해 1step만 미래를 봄.
 - In backward view, earlier states are given less credit for the TD error
 
 - In eligibility traces, the kth earlier step needs to be discounted by $\gamma^k \lambda^k$
