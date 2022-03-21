@@ -16,10 +16,10 @@ $$V(S_t) \leftarrow V(S_t)+\alpha(R_{t+1}+\gamma V(S_{t+1})-V(S_t))$$
 
 ## MC error vs TD error
 - TD error : $\delta_t = R_{t+1} +\gamma V(S_{t+1})-V(S_t) $
-- Relationship between MC error and TD error
+- Relationship between MC error and TD error  
 ![title](./img/66_MCandTD.PNG)
 
-## MC vs TD (1)
+## MC vs TD 비교(1)
 - TD can learn before knowing the final outcome
 - - TD learn a guess from a guess : boostrap
 - - TD can learn online after every step
@@ -30,13 +30,13 @@ $$V(S_t) \leftarrow V(S_t)+\alpha(R_{t+1}+\gamma V(S_{t+1})-V(S_t))$$
 - - TD works in continuing (non-terminating) environments
 - - MC only works for episodic(terminating) environments
 
-## MC vs TD (2)
+## MC vs TD 비교(2)
 - MC has high variance, zero bias
 - - Good convergence properties
 - - Not very sensitive to initial value
 - - Very simple to understand and use
 - TD has low variance
-- - Usually more efficient than MC
+- - Usually more efficient than MC : online이기 때문에
 - - TD(0) converges to $v_\pi$(s) in the mean for constant step-size
 - - TD(0) converges to $v_\pi$(s) with probability 1 with variable step-size satisfying stochastic approximation conditions
 $$\sum_{n=1}^{\infty}\alpha_n = \infty, \sum_{n=1}^{\infty}{\alpha_n}^2<\infty$$
