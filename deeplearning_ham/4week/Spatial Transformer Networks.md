@@ -1,4 +1,6 @@
 # Spatial(공간) Transformer Networks 논문 리뷰
+논문과 아래 사이트 강의 참조.
+https://www.youtube.com/watch?v=Rv3osRZWGbg
 
 ##  Abstract
 - CNNs are still limited by the lack of ability to be spatially invariant to the input data in a computationally and parameter efficient manner.
@@ -76,3 +78,59 @@ parameter &theta;를 가지고 input image와 output image 사이 좌표를 변�
 ### Spatial Transformer Networks
 - It is possible to have multiple spatial transformers in a CNN.
 - Multiple spatial transformers in parallel can be useful  if there are multiple objects or parts of interest in a feature map that should be focussed on individually : 병렬로 하겠다는 의미는 focus를 여러 이미지에 하겠다는 의미가 된다.
+- spatial transformer network로 downsample, upsample이 가능하기만 aliasing effect를 발생시키므로 하지마라
+
+### Experiments
+#### Distorted versions of the MNIST handwriting dataset for classification
+- Distortions : Rotation, Rotation-Scale-Translation(RTS), Projective(빛을 줘서 그림자를 볼때 여러 형태가 있는 것을 말한다.), Elastic(마치 철판이 휘어지는 것 같은 형태)
+- Transformations: Affine, Projective, Thin Plate Spline(TPS)  
+
+<img src="./img/12_figure.PNG">   
+- ST-CNN이 ST-FCN보다 정확도가 높은데 이유는 이미지에서 CNN이 더 정확도가 높기도하고 pooling layer이 들어있기 때문에 Spatial Transformer를 보완해주는 역할을 해주기도 한다.
+
+- Spatial Transformer을 2개를 넣어보자. 
+<img src="./img/13_figure.PNG">   
+
+- input이 2channel인데 1channel의 공간적 조건을 찾는 Spatial Transformer을 하나두고 2channel의 공간적 조건을 찾는 Spatial Transformer을 둔것이다. 이 때 만약 각 channel에 특화된걸 다른것에 적용하면 잘 안 맞다는 것 죽 independent하게 각각 알아서 학습한다는 의미이다. 아래에 실험 영상이 있다. 참고하자.
+https://www.youtube.com/watch?v=yGFVO2B8gok&t=8s
+
+#### A challenging real-world dataset, Street View House Numbers for number recognition
+- Data is preprocessed by taking 64x64 crops and more loosely 128x128 crops around each digit sequence  
+<img src="./img/14_figure.PNG">   
+
+#### CUB-200-2011 birds dataset for fine-grained classification by using multiple parallel spatial transformers
+- Fine-Grained Classification
+- CUB-200-2011 birds dataset contains 6k training images and 5.8k test images, covering 200 species of birds.
+- The birds appear at a range of scales and orientations, are not tightly cropped
+- Only image class labels are used for training.
+- The transformation predicted by 2xST-CNN(top row) and 4 x ST-CNN(bottom row)  
+<img src="./img/15_figure.PNG">   
+
+- 빨간색은 머리 초록색은 바디를 찾는 것을 확인할 수 있다.
+
+### Conclusion
+<img src="./img/16_figure.PNG">
+
+- 공통점이 있지만 deformable convolutional networks의 경우에는 점하나하나들의 offset을 계산해줌. 원래 해야 하는 conv에 offset만 더해주는거라서 더 좋다고 주장함.
+- Spatial Transformer의 경우에는 transformer하는 parameter만 찾아줌. sampling하면서 interpolation하는 연산을 해줘야함. 좀 더 복잡한 연산도 가능함. 
+
+정리하자면
+- Similarity
+- - have internal transformation parameters
+- - learn parameters purely from data
+- Difference
+- - 1. Spatial Transformer Networks
+- - * parameters : transform matrix
+- - * U -> V mapping is not free
+- - * "expensive warping, difficult parameter learning, success in small scale classification only"
+- - 2. Deformable Convolutional Networks
+- - * parameters : offsets per pixel
+- - * input -> output mapping is free
+- - * "light-weight no parametric transformation, no warping feature map"
+
+최종 결론.
+
+- A module that performs spatial transformations to features has been presented.
+- It is differentiable and learnt in an end-to-end fashion
+- No modifications to the loss function are needed.
+- Outperforms the state-of-the-art performance in some tasks.
