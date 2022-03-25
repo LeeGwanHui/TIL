@@ -32,7 +32,7 @@ https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=baejun_k&log
 - Spatial transformer mechanism 은 크게 세 부분으로 나뉜다. 계산 순서대로 아래처럼 구성되어 있다.
 - - localization network : input feature map이 삽입되는 곳 이곳에서 input에 대한 조건적인 변형을 준다.
 - - grid generator : 예상한 transformation parameter은 sampling grid를 만들 때 사용되고 여기서 말하는 sampling grid란 변형된 output을 생성하기 위한 input map의 point 들을 말한다. 
-- the feature map and the sampling grid are taken as inputs to the sampler, producing the output map sampled from the input at the grid points  
+- - the feature map and the sampling grid are taken as inputs to the sampler, producing the output map sampled from the input at the grid points  
 
 <img src="./img/01_figure.PNG">   
 
