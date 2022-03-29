@@ -1,5 +1,10 @@
 # Accelerating the Super-Resolution Convolutional Neural Network
 
+## Super-Resolution
+- image Super-Resolution은 저해상도 이미지를 고해상도로 변환시키는 문제를 의미함
+- image Super-Resolution은 유일한 정답이 존재하지 않는 ill-posed problem이 존재
+- 딥러닝 모델을 적용해서 image Super-Resolution 문제를 해결하려는 연구가 다수 진행되고 있음.
+- 크게 Supervised learning 방식과 GAN을 활용해 고해상도 이미지를 생성하는 방식이 있다.
 ## Abstract
 - motivation : SRCNN(CNN을 활용한 Super-Resolution model)은 이미 성능이 좋지만 real-time에 사용하기에는 computational cost가 높다. 
 - 목적 : SRCNN의 속도를 높인 구조를 제안하는 것 -> 아래 3가지를 중심으로 고침
