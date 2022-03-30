@@ -13,17 +13,35 @@ https://www.youtube.com/watch?v=Rv3osRZWGbg
 ## introduction
 - A desirable property of a system which is able to reason about images is to disentangle object pose and part deformation from texture and shape.
 - The introduction of local max-pooling layers in CNNs has helped to satisfy this property by allowing a network to be somewhat spatially invariant to the position of features.
-- 하지만 maxpooling의 경우에는 3x3이라던지 그 공간적인 특징이 이미 정해져 있고 작기 때문에 deep hierarchy에서만 잘 적용되며 중간 feature map에서는 input data에 대한 공간적 불변성을 보장하지 않는다.
+- 하지만 이 성질은 max-pooling과 conv. layer로 이루어진 deep hierarchy에서만 발견되며, 중간 layer에서의 feature map에서는 invariant하지 않는데, 그 이유는 max-pooling이 일부분에 대해서 적용되기 때문이다(i.e. 2 by 2 pixels).
+-  maxpooling의 경우에는 3x3이라던지 그 공간적인 특징이 이미 정해져 있고 작기 때문에 deep hierarchy에서만 잘 적용되며 중간 feature map에서는 input data에 대한 공간적 불변성을 보장하지 않는다.
 - 이 논문에서는 Spatial Transformer module을 제한하는데 표준 CNN model에 포함되어 공간적인 불변성을 보장해줄 것이다.
-- The action of the spatial transformer is conditioned on individual data samples, with the appropriate behaviour learnt during training for the task in question (without extra supervision).
+- The action of the spatial transformer is conditioned on individual data samples, with the appropriate behavior learnt during training for the task in question (without extra supervision).
 - the spatial transformer module is a dynamic mechanism that can actively spatially transform an image (or a feature map) 
 - This allows networks which include spatial transformers to not only select regions of an image that are most relevant (attention), but also to transform those regions to a canonical, expected pose to simplify recognition in the following layers.
+-	Image에서 가장 중요한 부분을 선택하고, 적절하게 변형함으로써 다음 layer에서 쉽게 recognition할 수 있도록 한다.
+-	또한 standard back prop.으로 end-to-end training이 가능하다.
+
 <img src="./img/00_figure.PNG">   
+- 다양한 task에서 활용이 가능하다.(ex. Image classification, co-localization, spatial attention…)
 
 ## Related Work
+### Affine Transformation
 - 2D affine에 대해  
 이동, 스케일링 등의 변환 전체를 식으로 표현한 것을 말한다.  
+- Combination of translation, rotation, shearing, scaling, reflection.
+<img src="./img/18_figure.PNG">   
 https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=baejun_k&logNo=221207284223
+### 논문 내용
+-	Modelling transformation에 대한 전반적인 아이디어, transformation-invariant representation에 대한 이해와 분석, feature selection에서의 attention, detection 메커니즘을 이전 논문을 이용하여 확인하였다.
+-	이전 논문에서, 네트워크를 통해 affine-transformed image와 transformation bet. input and output을 input으로 받고, output으로 본래의 image를 받도록 하여 affine transformation을 학습할 수 있는 일반적인 모델을 구성할 수 있음이 밝혀졌다. 
+-	generative capsule models are able to learn discriminative features for classification from transformation supervision.
+-	The invariance and equivariance of CNN representations to input image transformations are studied in by estimating the linear relationships between representations of the original and transformed images.
+-	And there are several works that designed the transformation invariant representation, such as scattering networks, and CNNs to construct filter banks of transformed filters.
+-	but the authors in this paper aimed to achieve invariant representations by manipulating the data rather than the feature extractors.
+-	And they claimed that the generalized differentiable attention mechanism to any partial transformation.
+-	And, differentiable attention mechanism에 대한 이전의 논문들을 통해서 자신들의 모델은 모든 spatial transformation에 대해 generalized differentiable attention mechanism을 구현하였다고 설명한다.
+
 
 ## Spatial Transformers
 - spatial transformer은 differentiable module로 feature map에다가 공간적 변형을 적용한다. (single forward pass 동안에)
@@ -81,6 +99,10 @@ parameter &theta;를 가지고 input image와 output image 사이 좌표를 변�
 - spatial transformer network로 downsample, upsample이 가능하기만 aliasing effect를 발생시키므로 하지마라
 
 ### Experiments
+-	이 section에서는 다양한 dataset을 사용하여 다양한 task에 STN을 적용하였을 때 결과가 어떻게 나오는지 확인한다. 
+-	첫번째로는 distorted MNIST dataset을 사용하여 STM이 classification의 성능을 올릴 수 있는지 확인하였고, 두번째로는 Street View House Numbers dataset을 이용하여 number recognition task에서 multiple spatial transformers를 통해 성능을 올릴 수 있음을 입증하였다.
+-	마지막으로는 마찬가지로 multiple spatial transformers가 fine-grained classification task에서 object parts를 찾고 이들에 attention을 주는 방법에 대해 학습할 수 있는지 CUB-200-2011 birds dataset을 이용해 확인하였다.
+
 #### Distorted versions of the MNIST handwriting dataset for classification
 - Distortions : Rotation, Rotation-Scale-Translation(RTS), Projective(빛을 줘서 그림자를 볼때 여러 형태가 있는 것을 말한다.), Elastic(마치 철판이 휘어지는 것 같은 형태)
 - Transformations: Affine, Projective, Thin Plate Spline(TPS)  
