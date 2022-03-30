@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.11)  24 MAR 2022 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.11)  30 MAR 2022 18:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/git_folder/TIL/deeplearning_ham/4week/pre-report/pre-report.tex
-(c:/git_folder/TIL/deeplearning_ham/4week/pre-report/pre-report.tex
+**c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex
+(c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (./bmvc2k.cls
 Document Class: bmvc2k 2014/07/14 BMVC Proceedings. v0.11
@@ -391,8 +391,8 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [letter].
 
-(./pre-report.aux)
-\openout1 = `pre-report.aux'.
+(./5week_pre_report.aux)
+\openout1 = `5week_pre_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -484,9 +484,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
- (./pre-report.out) (./pre-report.out)
 \@outlinefile=\write3
-\openout3 = `pre-report.out'.
+\openout3 = `5week_pre_report.out'.
 
 \bmv@box authname1 =\box57
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 14.
@@ -537,50 +536,143 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 18
 (c:/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<images/01_ST.PNG, id=27, 636.87938pt x 266.49562pt>
-File: images/01_ST.PNG Graphic file (type png)
-<use images/01_ST.PNG>
-Package pdftex.def Info: images/01_ST.PNG  used on input line 46.
-(pdftex.def)             Requested size: 271.58157pt x 113.63934pt.
-<images/02_ST.PNG, id=29, 627.09282pt x 259.7203pt>
-File: images/02_ST.PNG Graphic file (type png)
-<use images/02_ST.PNG>
-Package pdftex.def Info: images/02_ST.PNG  used on input line 53.
-(pdftex.def)             Requested size: 142.26674pt x 85.35526pt.
-<images/03_ST.PNG, id=30, 619.56468pt x 321.45094pt>
-File: images/03_ST.PNG Graphic file (type png)
-<use images/03_ST.PNG>
-Package pdftex.def Info: images/03_ST.PNG  used on input line 53.
-(pdftex.def)             Requested size: 142.26053pt x 85.35576pt.
-<images/04_ST.PNG, id=31, 298.11375pt x 231.11343pt>
-File: images/04_ST.PNG Graphic file (type png)
-<use images/04_ST.PNG>
-Package pdftex.def Info: images/04_ST.PNG  used on input line 57.
-(pdftex.def)             Requested size: 199.17111pt x 113.8108pt.
-<images/05_ST.PNG, id=33, 297.36093pt x 228.855pt>
-File: images/05_ST.PNG Graphic file (type png)
-<use images/05_ST.PNG>
-Package pdftex.def Info: images/05_ST.PNG  used on input line 59.
-(pdftex.def)             Requested size: 199.16725pt x 113.80911pt.
-<images/06_ST.PNG, id=34, 625.58719pt x 158.84344pt>
-File: images/06_ST.PNG Graphic file (type png)
-<use images/06_ST.PNG>
-Package pdftex.def Info: images/06_ST.PNG  used on input line 62.
-(pdftex.def)             Requested size: 271.58157pt x 68.95818pt.
-<images/07_ST.PNG, id=35, 415.5525pt x 196.48407pt>
-File: images/07_ST.PNG Graphic file (type png)
-<use images/07_ST.PNG>
-Package pdftex.def Info: images/07_ST.PNG  used on input line 64.
-(pdftex.def)             Requested size: 199.17125pt x 85.35895pt.
-<images/08_ST.PNG, id=36, 593.96906pt x 222.8325pt>
-File: images/08_ST.PNG Graphic file (type png)
-<use images/08_ST.PNG>
-Package pdftex.def Info: images/08_ST.PNG  used on input line 67.
-(pdftex.def)             Requested size: 199.17346pt x 85.35725pt.
 
-Overfull \hbox (14.65572pt too wide) in paragraph at lines 39--70
+Package natbib Warning: Citation `jaderberg2015spatial' on page 1 undefined on input line 24.
+
+
+LaTeX Warning: File `images/01_ST.PNG' not found on input line 46.
+
+
+c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex:46: Package pdftex.def Error: File `images/01_ST.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 ...aphics[width=\linewidth]{images/01_ST.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 46.
+(c:/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+
+LaTeX Warning: File `images/02_ST.PNG' not found on input line 53.
+
+
+c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex:53: Package pdftex.def Error: File `images/02_ST.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 ...s[width=5cm, height=3cm]{images/02_ST.PNG}
+                                                   \includegraphics[width=5c...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/03_ST.PNG' not found on input line 53.
+
+
+c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex:53: Package pdftex.def Error: File `images/03_ST.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 ...s[width=5cm, height=3cm]{images/03_ST.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/04_ST.PNG' not found on input line 57.
+
+
+c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex:57: Package pdftex.def Error: File `images/04_ST.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...s[width=7cm, height=4cm]{images/04_ST.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `youtube' on page 1 undefined on input line 58.
+
+
+LaTeX Warning: File `images/05_ST.PNG' not found on input line 59.
+
+
+c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex:59: Package pdftex.def Error: File `images/05_ST.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 ...s[width=7cm, height=4cm]{images/05_ST.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/06_ST.PNG' not found on input line 62.
+
+
+c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex:62: Package pdftex.def Error: File `images/06_ST.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...aphics[width=\linewidth]{images/06_ST.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/07_ST.PNG' not found on input line 64.
+
+
+c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex:64: Package pdftex.def Error: File `images/07_ST.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ...s[width=7cm, height=3cm]{images/07_ST.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/08_ST.PNG' not found on input line 67.
+
+
+c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex:67: Package pdftex.def Error: File `images/08_ST.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...s[width=7cm, height=3cm]{images/08_ST.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (14.67166pt too wide) in paragraph at lines 39--70
 [] [] 
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -589,29 +681,69 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
- <./images/01_ST.PNG> <./images/02_ST.PNG> <./images/03_ST.PNG> <./images/04_ST.PNG> <./images/05_ST.PNG> <./images/06_ST.PNG>]
-<images/09_ST.PNG, id=100, 551.81157pt x 167.87718pt>
-File: images/09_ST.PNG Graphic file (type png)
-<use images/09_ST.PNG>
-Package pdftex.def Info: images/09_ST.PNG  used on input line 74.
-(pdftex.def)             Requested size: 271.58157pt x 82.62685pt.
-<images/10_ST.PNG, id=101, 655.69969pt x 483.30562pt>
-File: images/10_ST.PNG Graphic file (type png)
-<use images/10_ST.PNG>
-Package pdftex.def Info: images/10_ST.PNG  used on input line 79.
-(pdftex.def)             Requested size: 284.5267pt x 184.94122pt.
-<images/11_ST.PNG, id=103, 645.16031pt x 143.03438pt>
-File: images/11_ST.PNG Graphic file (type png)
-<use images/11_ST.PNG>
-Package pdftex.def Info: images/11_ST.PNG  used on input line 88.
-(pdftex.def)             Requested size: 271.58157pt x 60.20934pt.
-<images/12_ST.PNG, id=104, 685.8122pt x 197.23688pt>
-File: images/12_ST.PNG Graphic file (type png)
-<use images/12_ST.PNG>
-Package pdftex.def Info: images/12_ST.PNG  used on input line 94.
-(pdftex.def)             Requested size: 271.58157pt x 78.10783pt.
+]
 
-Overfull \hbox (12.94513pt too wide) in paragraph at lines 72--95
+LaTeX Warning: File `images/09_ST.PNG' not found on input line 74.
+
+
+c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex:74: Package pdftex.def Error: File `images/09_ST.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 ...aphics[width=\linewidth]{images/09_ST.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/10_ST.PNG' not found on input line 79.
+
+
+c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex:79: Package pdftex.def Error: File `images/10_ST.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 ...idth=10cm, height=6.5cm]{images/10_ST.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/11_ST.PNG' not found on input line 88.
+
+
+c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex:88: Package pdftex.def Error: File `images/11_ST.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...aphics[width=\linewidth]{images/11_ST.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/12_ST.PNG' not found on input line 94.
+
+
+c:/git_folder/TIL/deeplearning_ham/5week/pre-report/5week_pre_report.tex:94: Package pdftex.def Error: File `images/12_ST.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...aphics[width=\linewidth]{images/12_ST.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (13.0245pt too wide) in paragraph at lines 72--95
 []
  []
 
@@ -620,25 +752,40 @@ Overfull \hbox (0.8817pt too wide) in paragraph at lines 72--95
 \T1/ptm/b/n/9 CUB-200-2011 birds dataset for fine-grained clas-si-fi-ca-tion by us-ing mul-
  []
 
-[2 <./images/07_ST.PNG> <./images/08_ST.PNG> <./images/09_ST.PNG> <./images/10_ST.PNG> <./images/11_ST.PNG> <./images/12_ST.PNG>] (./pre-report.bbl) [3
 
-] (./pre-report.aux)
-Package rerunfilecheck Info: File `pre-report.out' has not changed.
-(rerunfilecheck)             Checksum: AB1262AFE591BB6B19998D3BFF3449C8;579.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+No file 5week_pre_report.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+(./5week_pre_report.aux)
+
+Package rerunfilecheck Warning: File `5week_pre_report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `5week_pre_report.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  AB1262AFE591BB6B19998D3BFF3449C8;579.
  ) 
 Here is how much of TeX's memory you used:
- 11170 strings out of 478276
- 174082 string characters out of 5850489
- 491678 words of memory out of 5000000
- 29095 multiletter control sequences out of 15000+600000
- 539731 words of font info for 143 fonts, out of 8000000 for 9000
+ 11496 strings out of 478276
+ 182361 string characters out of 5850489
+ 490357 words of memory out of 5000000
+ 29401 multiletter control sequences out of 15000+600000
+ 538640 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,9n,76p,349b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmaf.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbf.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmca.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on pre-report.pdf (3 pages, 3499245 bytes).
+ 70i,9n,76p,355b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmaf.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbf.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmca.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on 5week_pre_report.pdf (3 pages, 2140417 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 12 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 294 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
+ 10 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
