@@ -9,7 +9,7 @@
 
 % Document starts here
 \begin{document}
-\title{Spatial Transformer Networks}
+\title{Accelerating the Super-Resolution Convolutional Neural Network}
 \addauthor{
 Lee Gwan Hui$^1$, \today}{}{1}
 \addinstitution{
@@ -20,81 +20,106 @@ $^1$2017142136, Department of Electrical and Electronic Engineering, Yonsei Univ
 
 \section{abstract}
 
-\quad 다른 algorithm과 비교시 CNNs는 image classification에서 성능이 뛰어나지만 input data가 공간적으로 변형이 일어나면
- 판단을 못하는 spatially invariant의 한계가 있다.\cite{jaderberg2015spatial} 이 논문에서는 이 같은 input data가 전처리의 일종으로 module을 삽입하여 
- input data를 변형시켜 정확도를 높이는 방법이 제시되어 있다. 삽입된 module을 Spatial Transformer이라고 명명하고 이미 존재하는
- CNN이나 FCN 앞단 이나 중간에 삽입할 수 있다. spatial transformer module은 input data의 공간적인 변형을 
- 학습하고 이에 따라 input data를 변형 시킴으로써 최종 정확도를 높일 수 있다.
-
- \subsection{introduction}
- \quad 이 논문의 motivation은 input image을 전처리하여 CNN이나 FCN에 넣어줌으로써 정확도를 높여보자는 것인데 이 때 사용하는 전처리가 input 이미지의
- 일관성을 유지하는 것이다. 일관성을 유지하기 위해서는 공간적인 변형을 detect하고 특징을 반영해서 neural network에 넣어야한다.
- 사실 이미 CNN에서도 공간적인 특징을 반영하는 algorithm이 있다. 이는 pooling layer에 해당하는 것으로 kernel size에 
- 해당하는 값을 max나 avg를 취함으로써 spatially invariant에 도움을 준다. 하지만 kernel size가 이미 정해져 있고 공간적 변형을 커버하는 범위가 작기 때문에
- deep hierarchy에서만 잘 적용된다. 이 논문에서는 Spatial Transformer module을 제한함으로써 input data의 공간적인 불변성을 보장해줄 것이다.
- spatial transformer은 dynamic mechanism으로 input image을 적절히 바꾸어준다. 이 module의 작동은 가장 관련 깊은 image에 집중할 뿐만 아니라(attention)
- 표준적인 pose로 변환해주어 다음 나오는 layer의 인식에 도움을 준다. 이제 Spatial Transformer module을 살펴보자.
-
- \subsection{Spatial Transformers}
- \quad spatial transformer의 특징으로는 differentiable 이라는 것이다. 위에서 언급한대로 single forward pass 동안에 feature map에다가 공간적 변형을 적용한다.
- multi channel input에 대해서도 같은 warping을 각각의 channel에 적용시킬 수 있다. 아래 설명은 이해를 돕기 위해 single transform and single out per transformer을
- 다루지만 multi transform은 단순히 확장된 개념이라고 생각할 수 있고 실제 적용도 가능하다. 이런 spatial transformer mechanism은 크게 세가지로 나뉘고 계산 순서대로 아래처럼 구성되어 있다.
- \newline localization network : input feature map이 삽입되는 곳 이곳에서 input에 대한 조건적인 변형을 준다.
- \newline grid generator : 예상한 transformation parameter은 sampling grid를 만들 때 사용되고 여기서 말하는 sampling grid란 변형된 output을 생성하기 위한 input map의 points을 말한다. 
- \newline sampler : producing the output map sampled from the input at the grid points
- \newline 전체적인 구조는 아래와 같다.
- \newline  \includegraphics[width=\linewidth]{images/01_ST.PNG}
- \textbf{Localization Network} 간단한 구조로 일종의 neural network이다. 좌표를 transform 해주기 위한 parameter $\theta$ 을 찾아준다.
- 제약 조건은 마지막 단에 regression layer가 필요하다. $ \theta = f_{loc}(U)$ 로 식을 쓸 수가 있다.
- \newline  \textbf{Parameterized Sampling Grid:gird generator} 여기에서는 parameter $\theta$를 가지고 input image와 output image 사이의 좌표를 변환해주는
- grid를 계산해준다. 아래그림을 보면 좀더 명확하다. 왼쪽 그림은 identity transformation, 오른쪽 그림은 affine transform을 나타낸다. 
- 이 그림을 보고 설명하자면 identity transformation에 경우에는 input의 pixel을 그대로 반영해서 output으로 내보내는 것을 볼 수 있다. 반면
- affine transform의 경우에는 input pixel에서 공간적인 변형을 적용시켜줘서 output pixel에 대응하도록 설계되어있다.
- \newline  \includegraphics[width=5cm, height=3cm]{images/02_ST.PNG} \includegraphics[width=5cm, height=3cm]{images/03_ST.PNG}
- \newline affine transform은 공간을 변형하는 것으로 이해하면 되는데 예를 들면
- scale, rotation, translation, skew, cropping 이 있다. 6가지의 parameter을 가지고 있으며 아래 그림과 같이 변형이 일어난다. Localization Network에서 $\theta$의 값을 찾고
- gird generator에서는 input data의 pixel 옮기는 것이다. 
- \newline  \includegraphics[width=7cm, height=4cm]{images/04_ST.PNG}
- \newline attention의 경우에는 isotropic scale을 의미하는 것으로 4개의 parameter만을 가지고 있다. \cite{youtube}
- \newline  \includegraphics[width=7cm, height=4cm]{images/05_ST.PNG}
- \newline \textbf{Differentiable Image Sampling : Sampler} 위의 localization network와 gird generator의 결과를 받아서 input point를 output point로 mapping 시켜준다.
- 즉 gird generator가 발생시킨 좌표값을 하나씩 mapping 시켜주면 된다. 여기서 고려할 문제가 interpolation이다. sampling kernel을 generic하게 modeling하면 아래와 같은 형태로 나타난다.
- \newline  \includegraphics[width=\linewidth]{images/06_ST.PNG}
- 예를 들어보자면 가까운 pixel을 읽어오고 싶다면 integer sampling을 진행하면 되므로 아래와 같은 식을 사용할 수 있다.
- \newline  \includegraphics[width=7cm, height=3cm]{images/07_ST.PNG}
- \newline x,y축으로 각각 linear interpolation을 해주는 bilinear sampling을 가장 많이 사용하고 필요에 따라 중간값을 sampling하도록 설계하면 된다. 
- 아래는 original image을 각기 다른 방법으로 sampling한 결과이다. 
- \newline  \includegraphics[width=7cm, height=3cm]{images/08_ST.PNG}
- \newline  target value를 미분 가능하게 설계하면 loss function을 별도로 설계하지 않아도 CNN으로 부터 backpropagation이 진행되는 동안 함께 학습이 가능하다.
- \newline \textbf{Spatial Transformer Networks} 이 ST(spatial transformer) module은 여러개 삽입해도 된다. 만약 병렬로 삽입하게 된다면 다중 물체가 있는 그림에 각각 focus하겠다는 의미가 된다.
+\quad Super-Resolution이란 저해상도(Low resolution) 이미지를 고해상도(High resolution)로 변환시키는 문제로 2가지 접근 방법이 있다.\cite{youtube}
+크게 Supervised learning 방식과 GAN을 활용해 고해상도 이미지를 생성하는 방식이다. 이 예비 보고서에서는 Supervised learning 중에서도 CNN을 이용한 초기
+모델인 SRCNN을 발전시킨 FSRCNN을 살펴볼 것이다. 
+이 논문의 motivation은 SRCCNN은 이미 성능이 좋지만 real-time에 사용하기에는 computational cost가 높다는 점을 해결하는 것이다.
+ 즉 이 논문의 목적은 SRCNN의 속도를 높인 구조를 제안하는 것으로 크게 3가지를 중심으로 다룰 것이다. 
+ 첫째, network 끝단의 deconvolution layer을 삽입하는 것이다.
+ 두번째, SRCNN의 mapping layer에 shrinking layer와 expanding layer을 삽입하는 것으로 layer의 depth는 깊게 쌓되 계산량은 적게 설계한다.
+ 마지막으로, smaller filter size을 채택하는 것이다.
+ 결론적으로, 이 제안된 모델은 real-time에도 동작하기 위해서 SRCNN보다 압도적으로 speed up을 성취하였고 performance는 비슷하거나 약간 더 좋다.
  
+ \subsection{introduction}
+ \quad SRCNN은 간단한 구조와 좋은 restoration quality 때문에 주목을 받았다. 하지만 기존의 learning-based method보다 빠름에도 큰 이미지에서 processing speed가 
+ 여전히 불만족 스럽다는 단점이 있었다. SRCNN 보다 적어도 17배의 speed up이 일어나야 24fps인 real-time에 사용할 수 있다.
+ 이 문제를 해결하기 위해서 
+ 첫번째로, SRCNN에서 pre-processing step으로 upsampling하는 과정을 생략하고 마지막에 deconvolution layer로 upsampling을 진행하였다.
+ 두번째로, 위의 과정 때문에 감소한 정확도를 보안하기 위해 shrinking layer와 expanding layer로 사용해서 parameter의 
+ 급격한 증가 없이 non-linear mapping layer의 depth를 늘렸다. 다음장부터 FSRCNN의 형태를 살펴볼 것이다.
+ 이 논문의 목표는
+ 첫번째로, compact hourglass-shape CNN structure을 제안해서 빠른 image super-resolution을 진행하는 것이다.
+ 두번째로는 제안된 모델이 real-time에도 사용할 수 있도록 FSRCNN을 재구조화(FSRCNN-s)하는 것이다.
+ 
+ \subsection{Fast Super-Resolution by CNN}
+ \quad \textbf{SRCNN} 이 논문은 SRCNN을 발전시킨 모델이기 때문에 먼저 SRCNN \cite{dong2015image} 을 이해해야 한다. 이 논문은 Super-resolution의
+ 판도를 딥러닝 기반으로 바꾼 모델를 제안하였는데 SRCNN은 성능이 좋지만 단지 real-time에 쓸 수 없다는 단점이 있다.
+ \newline  \includegraphics[width=\linewidth]{images/00_SR.PNG}
+ SRCNN의 구조는 3가지 영역 Patch extraction and representation, Non-linear mapping 그리고 Reconstruction 로 되어 있다.
+ 먼저 Patch extraction의 경우에는 bicubic interpolation을 진행한 input image에서 patches을 뽑는 과정이다.
+ 두번째로 통과하는 non-linear mapping의 경우에는 non-linearity를 추가하는 것으로 neural network의 depth을 늘리는 과정으로 볼 수 있다.
+ 마지막으로 Reconstruction에서는 앞서 만들어진 patches를 모아 high-resolution image을 만든다. 
+ 이렇게 단 Convolutional layer 3개로 모델을 설정하였다. 이 때 성능을 비교해봐도 다른 deeplearning algorithm을 쓰지
+ 않은 방식에 비해 성능이 더 좋다. 
+ \newline  \includegraphics[width=\linewidth]{images/01_SR.PNG}
+ 이를 적용한 계산 복잡도는 $O\{({f_i}^2n_1+n_1{f_2}^2n_2+n_2{f_3}^2)S_{HR}\}$로 나타낼 수 있다. 여기서  ${{\{f_i\}}^3}_{i=1}$ 과 ${{\{n_i\}}^3}_{i=1}$은 각각
+ filter size 와 filter number of three convolution layers을 나타낸다. 그리고 $S_{HR}$는 size of the HR image 이다.      
+ \newline SRCNN이 real-time에 쓰일 수 없는것은 크게 두가지 이유로
+ 이미지를 전처리하는 과정에서 bicubic interpolation을 사용해 upsampling을 먼저 진행하기 때문에 큰 feature size가 CNN layer 전역에서 돌아다니며 계산하게 된다.
+ 또한, non-linear mapping step에서 높은 channel 수(dimension)를 유지하며 CNN을 통과하기 때문에 정확도는 높지만 계산량이 증가하는 결과를 초래한다.
+ \newline 위의 한계점을 개선한다면 계산 속도가 상승할 것이다. 그렇기 때문에 이를 해결하여 real-time에서 사용하기 위한 FSRCNN이 개발된 것이다.
+ \newline \quad \textbf{FSRCNN} 논문에 핵심 architecture인 FSRCNN \cite{dong2016accelerating}을 살펴보자. 총 5개의 part로 순서대로 feature extraction, shrinking, mapping,
+ expanding, deconvolution 으로 구성되어 있다. 아래 그림을 참고하자.
+ \newline  \includegraphics[width=\linewidth]{images/02_SR.PNG}
+ 이 논문에서 성능과 속도에 영향을 심각하게 미치는 variable을 sensitive variable이라고 정의한다. 구조를 살펴보면서 하나씩 정의해 나갈 것이다.
+ FSRCNN의 구조에 들어가기 앞서 convolution layer을 $Conv(f_i,n_i,c_i)$ 라고 정의하고 deconvolution layer은 $DeConv(f_i,n_i,c_i)$ 라고 정의한다. 
+ 순서대로 kernel size, output channel 수, input channel 수이다. 
+ \newline \quad \textbf{feature extraction} 제일 처음 소개할 구조는 feature extraction이다. SRCNN의 Patch extraction and representation과 비슷한
+ 형태지만 input image에 전처리로 bicubic interpolation을 사용하지 않는다는 점에서는 다르다. kernel의 크기는 interpolation을 하지 않은 image이므로 feature size가 작기 때문에 5면 충분하다. 이를 표현하자면 
+ $Conv(5,d,1)$ 로 표현할 수 있다. 
+ 여기서 d는 위에서말한 sensitive variable로 클수록 정확도는 증가하지만 계산량이 많아져 일종의 trade off 관계에 있는 parameter이다.
+ \newline \quad \textbf{Shrinking} 두번째로 소개할 구조는 Shrinking layer이다. 이 부분은 계산량을 감소시키기 위한 trick으로 non-linear mapping을 하기전에 실시한다.
+ 1x1 convolution layer을 통해 channel 수를 줄이게 되어 다음과 같이 표현할 수 있다. $Conv(1,s,d)$.
+ 여기서 s는 sensitive variable이다.
+ \newline \quad \textbf{Non-linear mapping} 이 부분은 SRCNN에도 있는 구조지만 SRCNN에서는 오직 single non-linear mapping을 사용했다. 특히 FSRCNN에서는
+ 매우 중요한 layer인데 SRCNN과는 다르게 interpolation을 하지 않아서 정확도 측면에서 부족한 상태이기 때문에 cnn의 depth를 늘려 정확도를 높여줘야한다.
+ $ m \times Conv(3,s,s) $로 표현할 수 있다.
+ 여기서 m은 sensitive variable이다.
+ \newline \quad \textbf{Expanding} 여기서는 shrinking layer에서 축소한 channel을 다시 복구 시키는 곳이다. expanding layer없이 upsampling 시키면 정확도 측면에서 효율이 좋지 못하다.
+  즉 이 구조를 넣은 이유는 대칭적인 구조가 더 성능이 좋게 나왔기 때문이라고 할 수 있다. $ Conv(1,d,s) $ 로 쓸 수 있다.
+ \newline \quad \textbf{Deconvolution} FSRCNN의 핵심이 되는 부분이다. deconvolution을 이해하기 위해서는 convolution 개념으로부터 접근하는 것이 좋다.
+ \newline  \includegraphics[width=\linewidth]{images/03_SR.PNG}
+ 위의 convolution layer은 4x4 feature size를 가지고 있는 input에 대해서 kernel size가 3이고 stride가 1인 convolution filter을 통과시킨다면 결과가 2x2 matrix가 나온다는 것을 보여준다.
+ 이 연산 과정 중 kernel을 matrix로 표현한다면 \cite{deconv} 아래와 같이 표현가능하다.
+ \newline  \includegraphics[width=\linewidth]{images/04_SR.PNG}
+ 위 그림의 의미는 kernel을 matrix로 표현한 것으로 이를 이용해서 Y=AX 의 matrix 연산으로 표현하면 아래와 같이 표현할 수 있다. 
+ \newline  \includegraphics[width=9cm, height=4cm]{images/05_SR.PNG}
+ \newline 즉 이런 convolution 과정을 통해서 output matrix인 2x2를 flatten한 형태의 결과를 얻을 수 있다는 것이다.
+ 이제 볼것은 deconvolution으로 여기까지 따라왔으면 이해할 수 있다. 이제 과정은 2x2 matrix에서 4x4 matrix를 얻어야 한다. 이를 일종의 upsampling으로도 볼 수 있다. 
+ 즉 flatten한 vector의 형태로는 각각 4x1과 16x1의 vector을 얻으면 된다. 이는 A를 transform 시킨 $A^T$을 이용하면 된다.
+ \newline  \includegraphics[width=9cm, height=6cm]{images/06_SR.PNG}
+ \newline 이런 방식으로 deconvolution layer이 진행된다. 이런 deconvolution은 명명상 Transposed convolution이 더 적합하다고 한다.
+ \newline 이제 다시 돌아가서 FSRCNN에서의 적용을 살펴보자. FSRCNN에서는 deconvolution layer을 upsampling에 이용하고 이전 layer의 output feature을 종합하는 역할을 한다.
+ 식으로 나타내면 $ DeConv(9,1,d) $로 나타낼 수 있다. 
+ \newline \quad \textbf{추가적인 특징} deconvolution layer을 마지막으로 FSRCNN의 구조는 끝이 났지만 학습을 위해 사용한 몇가지 테크닉에 대해 소개해볼까한다.
+ 이 논문에서는 ReLU의 zero gradients에 의해 야기되는 dead features을 PReLU을 사용해서 예방한다. 또한 cost function으로는 MSE을 사용한다.
+ \newline \quad \textbf{overall structure}
+ 전체적인 구조는 $ Conv(5,d,1) - PReLU - Conv(1,s,d) - PReLU - m \times Conv(3,s,s) - PReLU - Conv(1,d,s) - PReLU - DeConv(9,1,d) $ 이다.
+ 특히 sensitive variable을 이용해서 FSRCNN(d,s,m)으로 표기한다. 이 실험으로 얻는 계산 복잡도는 $ O\{(9ms^2+2sd+106d)S_{LR}\}$ 이다.
+ 여기서 주목할 점은 위의 SRCNN의 계산복잡도는 HR image size에 비례하지만 FSRCNN은 original LR image size에 비례하게 complexity가 결정된다는 것이다. 
+ 이는 SRCNN은 interpolation을 진행했고 FSRCNN은 input image를 바로 사용하기 때문이다. 
+ \newline \quad \textbf{SRCNN vs FSRCNN}
+ 앞에서도 수없이 언급했지만 마지막으로 두개의 차이를 정리해보자. 먼저  deconvolution layer로 upscaling 진행하는 차이점이 있다.
+ 또다른 차이로는 SRCNN에서는 single mapping layer이었던 반면 FSRCNN에서는 shrinking layer,4 mapping layers and an expanding layer로 구성을 바꾸었다.
+
  \subsection{Experiments}
- \textbf{Distorted versions of the MNIST handwriting dataset for classification} 이 실험은 변형시킨 MNIST dataset을 가지고 실험을 진행하는 것으로 rotation, rotation, scale-translation(RTS), projective, elastic
- 의 방법으로 변형시킨다. 아래 오른쪽 그림을 보면 변형된 input data의 변형을 잘 detect하여 ST module을 통과시킨 새로운 CNN에 들어갈 input data가 regular함을 확인할 수 있다.
- \newline  \includegraphics[width=\linewidth]{images/09_ST.PNG}
-  ST(spatial transformer) module를 삽입한 결과가 기존 CNN 결과보다 더 좋다. 또한 FCN에 삽입한 것보다 CNN에 삽입한게 결과가 좋았는데 원래 FCN보다 CNN의 성능이 좋기도 하고 
-  CNN에서는 2개의 pooling layer가 있기 때문에 ST와 상호보완적으로 공간적 변형을 인식하는 효과가 있다. sampling의 경우 bilinear sampling으로 통일했지만, transformation function은 
-  affine, projection, 16개의 parameter을 가지고 있는 thin plate spline transformation 각각 사용했다고 한다.
- 아래 그림은 spatial transformer을 2개를 넣은 것으로 각 channel에 independent하게 ST module이 학습됨을 의미한다. 
- \newline  \includegraphics[width=10cm, height=6.5cm]{images/10_ST.PNG}
- 자세한 영상은 다음 사이트를 참고하자.
- \href{https://www.youtube.com/watch?v=yGFVO2B8gok&t=8s}{DeepMind}
- \newline \textbf{A challenging real-world dataset, Street View House Numbers for number recognition}
- 이 실험은 각각의 이미지에서 sequence of numbers,1 $\sim$ 5개 사이의 digits으로 이루어진 데이터를 인식하는 것으로 실제 데이터이기 때문에 매우 scale이 다양하고 
- 공간적 배열도 다양하게 되어 있다. 전처리로 이미지 주변의 64x64 crop을 하거나 128x128 crop을 진행하였다. 또한 5개의 독립적인 softmax classifier이 몇자리수인지 판단한다.
- 이 실험에는 CNN 들어가기전 module을 삽입하기도 했지만 더 깊은 곳에서 module을 삽입하였는데 그 결과 중간 중간 feature map에서도 공간적인 정보 변형을 일반화해줄 수 있었다.
- 하지만 거의 정확도 차이가 없기 때문에 computation seed가 더 느린만큼 single을 사용해도 충분할 것 같다.(speed는 single과 multi는 거의 차이가 없다. 왜냐하면 module이 너무 간단하기 때문이다.
- 실제로 multi ST-CNN과 CNN을 비교하면 6\%정도 차이가 난다고 실험 결과에서 밝힌다.)
- \newline  \includegraphics[width=\linewidth]{images/11_ST.PNG}
- \newline \textbf{CUB-200-2011 birds dataset for fine-grained classification by using multiple parallel spatial transformers}
- 실험 결과가 특별한데 아래 그림을 보면 알 수 있듯이 parallel로 ST module을 쌓은 경우에 각각의 module은 다른 곳을 집중해서 보는 것을 확인할 수 있다.
- 빨간색을 보면 새의 머리 주변을 보고 초록색박스는 몸통의 중심을 기준으로 crop된 image을 집중하는 것을 볼 수 있다. 이 실험에 대해서 간략히 말하자면 inception model에다가
- ST module을 삽입하였다. 이 실험으로 알 수 있는 것은 원래 이미지의 크기가 있으면 ST module을 이용해서 성능의 하락없이 이미지를 적절히 downsampling이 가능하다는 것이다.
- 또한 결과의 box를 보면 알 수 있듯이 사물 detection의 효과도 있는 것을 확인할 수 있다.
- \newline  \includegraphics[width=\linewidth]{images/12_ST.PNG}
+ 실험 결과를 보기전에 PSNR의 정의가 필요하다. 
+ \newline \includegraphics[width=\linewidth]{images/08_SR.PNG}
+ 여기서 말하는 $MAX_i$는 일반적인 이미지에서 255값을 의미하는 값이고 MSE는 $\frac{1}{N}\sum_{i=1}^{N}{(I(i)-\hat{I}(i))}^2$ 을 의미한다.
+ 여기서 I(i)는 원본 이미지 픽셀값을 의미하고 $\hat{I}(i)$는 예측이미지 픽셀값을 나타낸다. 즉 원본이미지 픽셀값과 예측 이미지 픽셀값이 같게 되면 MSE=0이 되어 최댓값을 알 수 없다.
+ PSNR은 원본 이미지 대비 손실된 품질의 정도를 파악하는 것으로 보통 40이 넘어가면 잘 복원되었다고 평가한다.
+ \newline \includegraphics[width=\linewidth]{images/07_SR.PNG}
+ 위의 테이블은 sensitive variable을 변화시켜 PSNR의 값을 비교하기 위해 나타낸 것이다. 괄호안의 값은 parameter의 수를 나타낸다.
+위의 테이블을 보면 m(Non-linear mapping layer 수)이 클수록 더 좋은 성능을 낸다. 이는 cnn layer의 depth가 증가하기 때문이다. 
+또한 d와 s가 증가할 수록 정확도가 증가하는 경향을 보이는데
+이를 해석하자면 더 많은 channel로 처리할 수록 더 많은 image의 feature을 추출하기 때문에 성능이 좋아진다. 
 \subsection{Conclusion}
- 이 논문에서는 neural network에 적용가능한 새로운 self-contained module(ST)을 소개하였다. 이 module은 간단히 기존 알고리즘에 삽입하여(보통 input단에 삽입하는 것이 사람이 해석하기에 더 효과가 있다.) 
- 사용할 수 있고 또한 별도의 loss function의 변화없이 미분가능한 module이기 때문에 end to end 학습이 가능하다. 또한 3D transformation에도 쉽게 확장 가능하다.
+ 이 논문에서는 계산량을 극단적으로 줄인 변형된 FSRCNN-s 모델을 만들어 real-time에도 돌릴 수 있고 의미있는 성능을 가진 모델을 제시하였다.
+ 아래 그림은 이전에 유명한 SR model들과 비교해서 FSRCNN은 가장 좋은 성과를 얻은 것을 보여준다.
+ 즉 이 논문의 성과는 이전의 논문들보다 성능이 좋고 더 계산량이 작아 real-time에도 사용할 수 있는 모델을 만들었다는 것이 가장 크다. 이 논문에서는 이를 성취하기 위해서
+ deconvolution layer의 개념을 사용하였고 또한 계산량을 줄이기 위해 1x1 convolution layer도 사용하였다. 
+ \newline \includegraphics[width=9cm, height=4cm]{images/09_SR.PNG}
+
 \newpage
 \bibliography{egbib}
 
