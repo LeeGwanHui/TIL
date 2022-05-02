@@ -1,0 +1,40 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[h()]{h}
+황도식 교수님 기초인공지능 수업 강의 노트.
+
+\bibitem[you({\natexlab{a}})]{youtubeCAM}
+https://youtu.be/kzpsm6ero6c.
+\newblock {\natexlab{a}}.
+
+\bibitem[you({\natexlab{b}})]{youtubeGradCAM}
+https://youtu.be/ua5rir79i0o.
+\newblock {\natexlab{b}}.
+
+\bibitem[you({\natexlab{c}})]{youtubeXAI}
+youtube [techtonic 2020] track 1. explainable ai(x-ai): 딥러닝 모델은
+  무엇을 보는가? - 정형식 프로.
+\newblock {\natexlab{c}}.
+
+\bibitem[Selvaraju et~al.(2017)Selvaraju, Cogswell, Das, Vedantam, Parikh, and
+  Batra]{selvaraju2017grad}
+Ramprasaath~R Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam,
+  Devi Parikh, and Dhruv Batra.
+\newblock Grad-cam: Visual explanations from deep networks via gradient-based
+  localization.
+\newblock In \emph{Proceedings of the IEEE international conference on computer
+  vision}, pages 618--626, 2017.
+
+\bibitem[Zhou et~al.(2016)Zhou, Khosla, Lapedriza, Oliva, and
+  Torralba]{zhou2016learning}
+Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba.
+\newblock Learning deep features for discriminative localization.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 2921--2929, 2016.
+
+\end{thebibliography}

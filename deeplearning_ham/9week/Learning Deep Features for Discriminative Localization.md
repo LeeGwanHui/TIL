@@ -45,7 +45,7 @@ In this work, we show that, using the right architecture, we can generalize this
 - $f_k(x,y)$ 는 k번째 feature map에 x,y를 의미한다. 
 - GAP를 적용한 결과는 $F^k= \Sigma_{x,y}f_k(x,y)$ 로 나타낸다.  (전체로 나누는 과정은 편의상 생략했음)
 - class c에 대한 softmax의 input은 $S_c=\Sigma_k w_c^cF_k$ 라고 나타낸다.
-- 결론적으로 $w_^k$ 는 class c에 대한 $F_k$의 importance를 나타냄.
+- 결론적으로 $w_C^k$ 는 class c에 대한 $F_k$의 importance를 나타냄.
 - 마지막으로 class c에 대한 softmax의 output은 $P_c=\frac{exp(S_C)}{\Sigma_c exp(S_C)}$ 로 나타낸다.  
 <img src="./img/04_CAM.PNG">    
 <img src="./img/05_CAM.PNG">    
