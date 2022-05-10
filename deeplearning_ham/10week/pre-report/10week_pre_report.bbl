@@ -1,0 +1,29 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[you({\natexlab{a}})]{youtube}
+https://youtu.be/okdagzeuz4u.
+\newblock {\natexlab{a}}.
+
+\bibitem[you({\natexlab{b}})]{youtube_Style}
+https://youtu.be/va3e2c4ukjk.
+\newblock {\natexlab{b}}.
+
+\bibitem[Gatys et~al.(2016)Gatys, Ecker, and Bethge]{gatys2016image}
+Leon~A Gatys, Alexander~S Ecker, and Matthias Bethge.
+\newblock Image style transfer using convolutional neural networks.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 2414--2423, 2016.
+
+\bibitem[Johnson et~al.(2016)Johnson, Alahi, and
+  Fei-Fei]{johnson2016perceptual}
+Justin Johnson, Alexandre Alahi, and Li~Fei-Fei.
+\newblock Perceptual losses for real-time style transfer and super-resolution.
+\newblock In \emph{European conference on computer vision}, pages 694--711.
+  Springer, 2016.
+
+\end{thebibliography}
