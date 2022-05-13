@@ -36,7 +36,7 @@ $$ s_j(t) = f(\Sigma_i x_i(t)u_{ji})$$
 $$ y_k(t) = g(\Sigma_j s_j(t)v_{kj})$$
 - f(z) is sigmoid activation function
 $$ f(z) = \frac{1}{1+e^{-x}}$$
-$$ g(z_m) = \frac{e^{z_m}{\Sigma_k e^{z_k}}}$$
+$$ g(z_m) = \frac{e^{z_m}}{{\Sigma}_k e^{z_k}}$$
 -	다음으로는 training detail에 대해 설명되어있다.
 - s(0)는 0.1과 같은 작은 수로 이루어진 vector로 설정해서 initialization해준다.
 - -	만약 data 수가 매우 많다면, initialization은 별 상관 없다.

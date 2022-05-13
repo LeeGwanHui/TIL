@@ -1,0 +1,26 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[LST()]{LSTM}
+http://colah.github.io/posts/2015-08-understanding-lstms/.
+
+\bibitem[you()]{youtube}
+https://youtu.be/oyczvsdxmak.
+
+\bibitem[Bengio et~al.(2000)Bengio, Ducharme, and Vincent]{bengio2000neural}
+Yoshua Bengio, R{\'e}jean Ducharme, and Pascal Vincent.
+\newblock A neural probabilistic language model.
+\newblock \emph{Advances in Neural Information Processing Systems}, 13, 2000.
+
+\bibitem[Mikolov et~al.(2010)Mikolov, Karafi{\'a}t, Burget, Cernock{\`y}, and
+  Khudanpur]{mikolov2010recurrent}
+Tomas Mikolov, Martin Karafi{\'a}t, Lukas Burget, Jan Cernock{\`y}, and Sanjeev
+  Khudanpur.
+\newblock Recurrent neural network based language model.
+\newblock In \emph{Interspeech}, volume~2, pages 1045--1048. Makuhari, 2010.
+
+\end{thebibliography}
