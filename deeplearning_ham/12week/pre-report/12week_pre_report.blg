@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: 12week_pre_report.aux
+The style file: plainnat.bst
+Database file #1: egbib.bib
+Warning--to sort, need author or key in youtube
+Warning--to sort, need author or key in youtube_seq
+Warning--to sort, need author or key in youtube_attention
+Warning--empty author in youtube
+Warning--empty title in youtube
+Warning--empty year in youtube
+Warning--empty author in youtube_attention
+Warning--empty title in youtube_attention
+Warning--empty year in youtube_attention
+Warning--empty author in youtube_seq
+Warning--empty title in youtube_seq
+Warning--empty year in youtube_seq
+Warning--empty year in GRU
+Warning--empty year in GRU
+You've used 6 entries,
+            2773 wiz_defined-function locations,
+            613 strings with 5436 characters,
+and the built_in function-call counts, 1906 in all, are:
+= -- 160
+> -- 70
+< -- 1
++ -- 29
+- -- 21
+* -- 164
+:= -- 255
+add.period$ -- 12
+call.type$ -- 6
+change.case$ -- 22
+chr.to.int$ -- 4
+cite$ -- 29
+duplicate$ -- 116
+empty$ -- 192
+format.name$ -- 24
+if$ -- 399
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 6
+newline$ -- 32
+num.names$ -- 12
+pop$ -- 77
+preamble$ -- 1
+purify$ -- 19
+quote$ -- 0
+skip$ -- 71
+stack$ -- 0
+substring$ -- 15
+swap$ -- 9
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 66
+warning$ -- 14
+while$ -- 9
+width$ -- 0
+write$ -- 67
+(There were 14 warnings)

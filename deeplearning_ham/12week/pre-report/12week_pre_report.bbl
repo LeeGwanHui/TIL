@@ -1,0 +1,35 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[you({\natexlab{a}})]{youtube}
+\emph{https://youtu.be/cs3tSnAsyRs}, {\natexlab{a}}.
+
+\bibitem[you({\natexlab{b}})]{youtube_attention}
+\emph{https://youtu.be/upskBSbA9cA}, {\natexlab{b}}.
+
+\bibitem[you({\natexlab{c}})]{youtube_seq}
+\emph{https://youtu.be/4DzKM0vgG1Y}, {\natexlab{c}}.
+
+\bibitem[Bahdanau et~al.(2014)Bahdanau, Cho, and Bengio]{bahdanau2014neural}
+Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio.
+\newblock Neural machine translation by jointly learning to align and
+  translate.
+\newblock \emph{arXiv preprint arXiv:1409.0473}, 2014.
+
+\bibitem[Kostadinov()]{GRU}
+Simeon Kostadinov.
+\newblock Understanding gru networks.
+\newblock
+  \emph{https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be}.
+
+\bibitem[Sutskever et~al.(2014)Sutskever, Vinyals, and
+  Le]{sutskever2014sequence}
+Ilya Sutskever, Oriol Vinyals, and Quoc~V Le.
+\newblock Sequence to sequence learning with neural networks.
+\newblock \emph{Advances in neural information processing systems}, 27, 2014.
+
+\end{thebibliography}
