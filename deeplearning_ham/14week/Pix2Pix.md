@@ -51,6 +51,7 @@ of changing the patch size
 - GAN은 random noise vector z로 부터 output image y로 mapping 을 배운다.
 - conditional GANs의 경우에는 obseved image x와 random noise vector z로 부터 y로 mapping 되는 것을 배운다.  
 <img src="./img/01_pix2pix.PNG">
+- L1 alone leads to reason able but blurry results. The cGAN alone (setting λ = 0 in Eqn. 4) gives much sharper results but introduces visual ar tifacts on certain applications.
 
 
 ### Objective
@@ -76,6 +77,7 @@ $$ G^{*} = argmin_G max_G min_D L_{cGAN}(G,D) + \lambda L_{L1}(G)$$
 - 이 연구에서는 prominent edge의 위치에 대한 정보의 bottleneck을 우회하기 위해서 skip connection을 사용한다.
 - unet 구조를 사용할 것이다.
 - skip connection이란 layer i 를 layer n-i와 함께 concatenate를 간단히 진행해서 기존의 정보를 보존하는 것이다.
+<img src="./img/03_pix2pix.PNG">
 
 #### Markovian discriminator (PatchGAN)
 - 아래는 L2보다 L1이 blurry에 강하지만 아래 결과를 보면 그래도 심하다.  
@@ -107,4 +109,4 @@ $$ G^{*} = argmin_G max_G min_D L_{cGAN}(G,D) + \lambda L_{L1}(G)$$
 - - Second, we measure whether or not our synthesized cityscapes are realistic enough that off-the-shelf recognition system can recognize the objects in them.  (FCN-8s 사용)
 
 ### Analysis of the objective function
-- 
+- conditioned discriminator과 unconditional discriminator을 비교할 것이다.
