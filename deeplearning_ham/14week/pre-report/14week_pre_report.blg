@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: 14week_pre_report.aux
+The style file: plainnat.bst
+Database file #1: egbib.bib
+Warning--to sort, need author or key in youtube
+Warning--to sort, need author or key in youtube_cycle
+Warning--empty author in youtube
+Warning--empty title in youtube
+Warning--empty year in youtube
+Warning--empty author in youtube_cycle
+Warning--empty title in youtube_cycle
+Warning--empty year in youtube_cycle
+You've used 4 entries,
+            2773 wiz_defined-function locations,
+            607 strings with 5405 characters,
+and the built_in function-call counts, 1947 in all, are:
+= -- 176
+> -- 78
+< -- 2
++ -- 29
+- -- 24
+* -- 160
+:= -- 242
+add.period$ -- 8
+call.type$ -- 4
+change.case$ -- 18
+chr.to.int$ -- 3
+cite$ -- 18
+duplicate$ -- 108
+empty$ -- 181
+format.name$ -- 26
+if$ -- 433
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 4
+newline$ -- 24
+num.names$ -- 8
+pop$ -- 62
+preamble$ -- 1
+purify$ -- 16
+quote$ -- 0
+skip$ -- 84
+stack$ -- 0
+substring$ -- 90
+swap$ -- 30
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 44
+warning$ -- 8
+while$ -- 12
+width$ -- 0
+write$ -- 49
+(There were 8 warnings)

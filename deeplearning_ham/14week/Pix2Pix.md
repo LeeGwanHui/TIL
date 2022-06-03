@@ -3,7 +3,7 @@
 ## Abstract
 - 이 연구자들은 image-to-image translation task를 위해 conditional adversarial networks을 연구했다.
 - conditional adversarial networks는 input image를 output image로 mapping 시키는 것을 학습할 뿐만 아니라 이 mapping을 학습하기 위해 loss function을 학습한다.
-- 기존의 연구들은 image-to-image domain 마다 loss function을 짜야 했었는데 이 연구는 같은 generic approach이 가능하다.
+- 기존의 연구들은 image-to-image domain 마다 loss function을 짜야 했었는데 이 연구는 same generic approach이 가능하다.
 - 이 연구로 탄생한 모델은 넓은 영역에서 적용가능하고 또한 parameter을 일일히 찾지 않아도 되는 채택의 편함을 가지고 있다.
 -  we no longer hand-engineer our mapping functions,and this work suggests we can achieve reasonable results without hand-engineering our loss functions either.
 - - 즉 기존 연구는 task 마다 mapping function과 loss function을 변경해주었어야 하는데 이 연구에서는 그렇지 않아도 된다는 의미이다.
