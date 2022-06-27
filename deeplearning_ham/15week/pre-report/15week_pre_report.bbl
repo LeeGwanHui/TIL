@@ -1,0 +1,23 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[art()]{article}
+\emph{https://www.hankookilbo.com/News/Read/201507021734397229}.
+
+\bibitem[Kang et~al.(2019)Kang, Xie, Rohrbach, Yan, Gordo, Feng, and
+  Kalantidis]{kang2019decoupling}
+Bingyi Kang, Saining Xie, Marcus Rohrbach, Zhicheng Yan, Albert Gordo, Jiashi
+  Feng, and Yannis Kalantidis.
+\newblock Decoupling representation and classifier for long-tailed recognition.
+\newblock \emph{arXiv preprint arXiv:1910.09217}, 2019.
+
+\bibitem[Zhang et~al.(2021)Zhang, Kang, Hooi, Yan, and Feng]{zhang2021deep}
+Yifan Zhang, Bingyi Kang, Bryan Hooi, Shuicheng Yan, and Jiashi Feng.
+\newblock Deep long-tailed learning: A survey.
+\newblock \emph{arXiv preprint arXiv:2110.04596}, 2021.
+
+\end{thebibliography}
